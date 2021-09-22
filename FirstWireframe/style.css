@@ -1,0 +1,58 @@
+.main {
+
+width:350px;
+height:80px;
+background-color: rgb(70, 149, 218);
+display:inline-block;
+margin: 0px 0px 5px;
+
+}
+
+.second {
+    width: 1100px;
+    height:80px;
+    background-color:yellowgreen;
+    display:inline-block;
+    margin: 0px 0px 5px;
+}
+
+.third {
+    width: 1455px;
+    height:40px;
+    background-color:rgb(111, 18, 197);
+    display:inline-block;
+    margin: 5px 0px 5px;
+    
+}
+
+.four {
+    width:700px;
+    height:300px;
+    background-color: rgb(177, 37, 37);
+    display:inline-block;
+    margin: 0px 0px 5px;
+}
+.five {
+    width:750px;
+    height:300px;
+    background-color: rgb(70, 149, 218);
+    display:inline-block;
+    margin: 0px 0px 5px;
+}
+
+
+.item {
+    width: 475px;
+    height: 350px;
+    margin: 5px 5px 1px;
+    background-color: sandybrown;
+    display:inline-block;
+
+}
+
+.seven{
+    width: 1000px;
+    height: 5px;
+    background-color: steelblue;
+
+}
