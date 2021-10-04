@@ -1,6 +1,8 @@
+
 body {
     margin: 0px;
-    font: size 14px;;
+    background-color: rgb(255, 248, 248);
+    font-style: 14px;
 }
 
 /* header*/
@@ -23,15 +25,22 @@ nav {
 .logo {
   margin-left:100px ;
   margin-top: 50px;
-  font-size: 1.5em;
-  font-style: italic;
-}
+ }
 
 .logo input {
 
     width: 60px;
     height: 60px;
    
+}
+
+.logo p {
+    margin-left: 150px;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
 }
 
 .nav-menu {
@@ -65,8 +74,8 @@ nav {
 
 /*image*/
 .main-image {
-    height: 500px;
-    background-color: rgb(166, 182, 211);
+    height: 600px;
+    background: url(/ProjectFrontEnd/layihe-image/our-students.jpg)
 
 }
 
@@ -77,13 +86,14 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     height: 200px ;
-    margin: -100px 150px 0 150px;
-    background-color: white;
+    margin: -100px 200px 0 200px;
+    
 }
 
 .cards {
-
+background-color: white;
 border: black 1px solid;
+border-radius: 50px;
 }
 
 
@@ -100,6 +110,7 @@ section {
      height: 100px;
      font-size: 2em;
      margin-left: 50px;
+     margin-top: 100px;
      color: rgb(14, 75, 116);
      font-weight: bold;
      font-style: italic;
@@ -110,14 +121,13 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: (3, 1fr);
     gap: 20px;
-    height: 1200px;
-    margin: 50px 150px;
+    height: 900px;
+    margin: 50px 200px;
 }
 
 .kurslar-cards {
 
     border: black 1px solid;
-
 
 }
 
@@ -130,7 +140,7 @@ section {
 
 .social-container
 {
-    height: 180px ;
+    height: 150px ;
     background-color: rgb(1, 1, 41);
 }
 
@@ -139,3 +149,6 @@ section {
 
 
 /* end footer*/
+
+
+
