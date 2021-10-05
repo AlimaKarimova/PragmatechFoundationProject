@@ -10,25 +10,31 @@ header {
 }
 
 .cap-header {
-    height: 80px;
     background-color: white;
 }
 
-
 .logo img {
     
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+.cap-header h1 {
     margin-left: 100px;
-    margin-top: 20px;
+    color: rgb(194, 29, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: rgb(224, 185, 178);
 }
 
 .nav-menu {
-    height: 50px;
-    background-color: ;
+    background-color:rgb(21, 21, 54);
 }
 
 .nav-menu ul {
+    height: 70px;
+    margin: 0;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -37,9 +43,9 @@ header {
 
 .nav-menu ul li {
     padding: 10px;
-    background: rgb(202, 23, 23);
-    border-radius:100%;
-    margin: 10px;
+    background: rgba(255, 0, 0, 0.842);
+    border-radius:10%;
+    margin-right: 10px;
 }
 
 .nav-menu ul li a {
@@ -47,22 +53,24 @@ header {
     font-size: 1 em;
     font-weight:bold;
     text-decoration: none;
-    color: white;
+    color: white ;
 }
 
 
 /* end header*/
 
-/*image*/
+/*start image*/
 
 .main-image {
     height: 600px;
-    background: url(/ProjectFrontEnd/layihe-image/our-students.jpg)
+   background-color: lightslategray;
 
 }
 
 
 /*end image*/
+
+/*start ustunkuler*/
 
 .ustunlukler {
     display: grid;
@@ -75,10 +83,10 @@ header {
 }
 
 .cards {
-background-color: rgb(202, 181, 85);
+background-color: white ;
+border: 1px solid black;
 border-radius: 10px;
 }
-
 
 
 /* end ustunlukler*/
@@ -113,8 +121,9 @@ section {
     border: black 1px solid;
 
 }
-
-
+.kurslar-cards img {
+    width: 100%;
+}
 
 
 /* end section*/
@@ -123,11 +132,18 @@ section {
 
 .social-container
 {
-    height: 150px ;
-    background-color: rgb(1, 1, 41);
+    height: 100px ;
+    background-color: rgb(21, 21, 54);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
+.social-container p {
+    margin-left: 100px;
+    font-size: 1.75em;
+}
 
 
 
