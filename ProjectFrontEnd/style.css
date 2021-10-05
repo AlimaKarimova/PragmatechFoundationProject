@@ -1,55 +1,38 @@
 
 body {
     margin: 0px;
-    background-color: rgb(255, 248, 248);
     font-style: 14px;
 }
 
 /* header*/
 header {
     width: 100%;
-    border-bottom: 2px solid rgb(26, 72, 133);
-    
-    
 }
 
-nav {
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.cap-header {
+    height: 80px;
     background-color: white;
-   
 }
 
-.logo {
-  margin-left:100px ;
-  margin-top: 50px;
- }
 
-.logo input {
-
+.logo img {
+    
     width: 60px;
     height: 60px;
-   
-}
-
-.logo p {
-    margin-left: 150px;
-    margin-bottom: 100px;
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: bold;
-    color: red;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .nav-menu {
-    height: 100px;
+    height: 50px;
+    background-color: ;
 }
 
 .nav-menu ul {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-menu ul li {
@@ -65,35 +48,35 @@ nav {
     font-weight:bold;
     text-decoration: none;
     color: white;
-    transition-property: all;
-    transition-duration: 0.3s;
 }
 
 
 /* end header*/
 
 /*image*/
+
 .main-image {
     height: 600px;
     background: url(/ProjectFrontEnd/layihe-image/our-students.jpg)
 
 }
 
+
 /*end image*/
 
 .ustunlukler {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    height: 200px ;
-    margin: -100px 200px 0 200px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    gap: 3px;
+    height: 180px ;
+    margin: -80px auto;
     
 }
 
 .cards {
-background-color: white;
-border: black 1px solid;
-border-radius: 50px;
+background-color: rgb(202, 181, 85);
+border-radius: 10px;
 }
 
 
