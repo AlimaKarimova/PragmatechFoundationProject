@@ -10,26 +10,20 @@ header {
 }
 
 .cap-header {
+    height: 80px;
     background-color: white;
+
 }
 
 .logo img {
-    
+    margin-left: 60px;
     width: 50px;
     height: 50px;
-    margin: 5px;
-    margin-left: 50px;
 }
 
-.cap-header h1 {
-    margin-left: 100px;
-    color: rgb(194, 29, 0);
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: rgb(224, 185, 178);
-}
 
 .nav-menu {
-    background-color:rgb(21, 21, 54);
+    background-color:rgb(216, 36, 36);
 }
 
 .nav-menu ul {
@@ -43,7 +37,6 @@ header {
 
 .nav-menu ul li {
     padding: 10px;
-    background: rgba(255, 0, 0, 0.842);
     border-radius:10%;
     margin-right: 10px;
 }
@@ -63,10 +56,10 @@ header {
 
 .main-image {
     height: 600px;
-   background-color: lightslategray;
+    background-image: url(/ProjectFrontEnd/layihe-image/self-development-concept-idea-personal-growth-progress-learning-education-vector-illustration-cartoon-style-150813287.jpg);
+    background-size: cover;
 
 }
-
 
 /*end image*/
 
@@ -98,13 +91,14 @@ section {
 }
  
 .cap h1 {
-     height: 100px;
+     height: 70px;
      font-size: 2em;
      margin-left: 50px;
-     margin-top: 100px;
-     color: rgb(14, 75, 116);
+     margin-top: 170px;
+     color: rgb(5, 57, 92);
      font-weight: bold;
      font-style: italic;
+     text-decoration-line: underline;
 }
 
 .kurslar-container {
@@ -113,7 +107,7 @@ section {
     grid-template-rows: (3, 1fr);
     gap: 20px;
     height: 900px;
-    margin: 50px 200px;
+    margin: 50px 200px 200px 200px;
 }
 
 .kurslar-cards {
@@ -125,6 +119,17 @@ section {
     width: 100%;
 }
 
+section button {
+    color: black;
+    width: 240px;
+    height: 45px;
+    border: 2px solid black ;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+
 
 /* end section*/
 
@@ -132,8 +137,8 @@ section {
 
 .social-container
 {
-    height: 100px ;
-    background-color: rgb(21, 21, 54);
+    height: 150px ;
+    background-color: rgba(86, 88, 88, 0.979);
     color: white;
     display: flex;
     justify-content: space-around;
@@ -149,18 +154,24 @@ section {
 
     height: 50px;
     width: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-
-.social-container p {
-    margin-left: 100px;
-    font-size: 1.75em;
+.social-text h2 {
+ margin: 0 auto;
+ font-size: 1.75em;
 }
+
+.social-text p {
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+ 
+
 
 .footer-main {
-    height: 300px;
-    background-color: rgb(245, 237, 237);
+    height: 250px;
 }
 
 
