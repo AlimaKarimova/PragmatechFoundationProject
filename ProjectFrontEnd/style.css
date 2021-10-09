@@ -10,6 +10,9 @@ header {
 }
 
 .cap-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 80px;
     background-color: white;
 
@@ -20,6 +23,12 @@ header {
     width: 50px;
     height: 50px;
 }
+
+.cap-header img {
+    width: 50px;
+    height: 50px;
+}
+
 
 
 .nav-menu {
@@ -56,10 +65,9 @@ header {
 
 .main-image {
     height: 600px;
-    background-image: url(/ProjectFrontEnd/layihe-image/self-development-concept-idea-personal-growth-progress-learning-education-vector-illustration-cartoon-style-150813287.jpg);
+    background-image:url(/ProjectFrontEnd/layihe-image/esas-sekil.jpg) ;
     background-size: cover;
-
-}
+    }
 
 /*end image*/
 
@@ -67,7 +75,7 @@ header {
 
 .ustunlukler {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 70%;
     gap: 3px;
     height: 180px ;
@@ -76,11 +84,29 @@ header {
 }
 
 .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 background-color: white ;
 border: 1px solid black;
 border-radius: 10px;
 }
 
+.cards img {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    
+}
+.cards hr {
+    color: gold;
+    margin-top: 20px;
+    width: 120px;
+}
+.cards h5 {
+    font-size: 1.2em;
+}
 
 /* end ustunlukler*/
 
@@ -88,6 +114,7 @@ border-radius: 10px;
 
 section {
     width: 100%;
+    
 }
  
 .cap h1 {
@@ -107,7 +134,7 @@ section {
     grid-template-rows: (3, 1fr);
     gap: 20px;
     height: 900px;
-    margin: 50px 200px 200px 200px;
+    margin: 50px 200px 100px 200px;
 }
 
 .kurslar-cards {
@@ -119,12 +146,20 @@ section {
     width: 100%;
 }
 
-section button {
+.button {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+    button {
     color: black;
     width: 240px;
     height: 45px;
     border: 2px solid black ;
     font-weight: bold;
+    margin: 0 0 100px 0;
     
 }
 
@@ -168,8 +203,6 @@ section button {
 }
 
  
-
-
 .footer-main {
     height: 250px;
 }
