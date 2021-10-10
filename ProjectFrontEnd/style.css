@@ -5,20 +5,27 @@ body {
 }
 
 /* header*/
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
 .adress {
     background-color: white;
-    height: 40px;
+    height: 30px;
 }
 
 .wrapper   {
     width: 100%;  
-    background-color: #00262b; 
+    background-color: #144147; 
 }   
 
 .cap-header {
     display: flex;
     justify-content: space-between;
     height: 70px;
+    position: relative;
+    left: 5% ;
     letter-spacing: 2px;
   
 }
@@ -41,27 +48,25 @@ body {
 }
 
 .logo img {
-    margin-left: 60px;
-    margin-right: 30px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     color: azure;
+    
 }
 
-.cap-header img {
-    width: 50px;
+.telefon img {
     height: 50px;
+    width: 50px;
 }
-
 
 .nav-menu {
     background-color:rgb(216, 36, 36);
-    letter-spacing: px;
+
 }
 
 .nav-menu ul {
-    height: 60px;
+    height: 50px;
     margin: 0;
     list-style-type: none;
     display: flex;
@@ -73,6 +78,15 @@ body {
     padding: 10px;
     border-radius:10%;
     margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.nav-menu ul li:hover {
+
+    background-color: rgb(68, 67, 67);
+    border-radius: 50%;
+    scale: 6px;
+
 }
 
 .nav-menu ul li a {
@@ -82,7 +96,6 @@ body {
     text-decoration: none;
     color: white ;
 }
-
 
 /* end header*/
 
@@ -185,9 +198,20 @@ section {
     border: 2px solid black ;
     font-weight: bold;
     margin: 0 0 100px 0;
-    
+    transition: 0.3s;
 }
 
+button:hover {
+    background-color: rgb(4, 107, 4);
+    border:none;
+    color: white;
+    font-weight: 700;
+    
+    
+}
+button:active {
+    background-color: red;
+}
 
 
 
