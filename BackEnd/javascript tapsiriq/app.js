@@ -7,4 +7,4 @@ for (let i = 0; i < 4; i++)
 console.log(userSurname);
 console.log(userName+'|'+'|'+'|'+userSurname);
 console.log('Sizin adınız:'+ userName);
-console.log('Sizin adınız:'+ userSurname);
+console.log('Sizin soyadınız:'+ userSurname);
