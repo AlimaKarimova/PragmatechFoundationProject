@@ -11,15 +11,18 @@ body {
 
 .header {
    width: 100%;
-   padding: 40px;
+   padding: 25px;
    position: fixed;
    display: flex;
    justify-content: space-between;
-   background-color: whitesmoke;
+   background-color: whitesmoke;color: rgb(4, 56, 87);
+   font-weight: 400;
+
 }
 
 .name-surname p {
-   font-size: 20px;
+   font-size: 35px;
+   
 }
 
 .menu ul {
@@ -28,38 +31,54 @@ body {
 }
 .menu ul li {
    margin-right: 20px;
-   font-size: 20px;
+   font-size: 17px;
+   text-transform: uppercase;
 }
 
 /* end menu*/
 
 .blue-background {
    height: 750px;
-   background-image: url(/xxx/image/modern-architecture-night-urban-building-5k-8k-8272x6200-1347.jpg);
+   background-image: url(/ProjectFrontEnd/layihe/image/modern-architecture-night-urban-building-5k-8k-8272x6200-1347.jpg);
    background-size:cover ;
 }
 
 .about-me {
-   height: 300px;
+   height: 350px;
    background-color:rgb(229, 226, 226) ;
-   font-size: 25px;
+   font-size: 20px;
    text-align: center;
-   padding: 70px;
+   padding:;
+   color: rgb(7, 34, 85);
+   font-weight: 600;
+  
 }
+
+.about-me h2 {
+   text-decoration-line: underline;
+   font-weight: 700;
+
+}
+
+/* end about-me*/
+
 
 .experience {
    height: 700px;
    display: flex;
    flex-direction: column;
+   color: rgb(7, 34, 85);
+   border-bottom: 1px solid rgb(235, 233, 233);
    
 }
 .experience-header {
 height: 100px;
 font-size: 25px;
-background: crimson;
 text-align: center;
 padding: 40px;
 margin-bottom: 10px;
+border-bottom: 1px solid rgb(235, 233, 233);
+font-weight: 700;
 
 }
 
@@ -81,15 +100,17 @@ margin-bottom: 10px;
    height: 700px;
    display: flex;
    flex-direction: column;
+   color: rgb(7, 34, 85);
    
 }
 .education-header {
 height: 100px;
 font-size: 25px;
-background: crimson;
 text-align: center;
 padding: 40px;
 margin-bottom: 10px;
+border-bottom: 1px solid rgb(235, 233, 233);
+font-weight: 700;
 
 }
 
@@ -104,7 +125,9 @@ margin-bottom: 10px;
 .education-list ul li {
    margin-bottom: 30px;
 }
+
 /*education end*/
+
 .skills {
    height: 700px;
    display: flex;
@@ -114,10 +137,10 @@ margin-bottom: 10px;
 .skills-header {
 height: 100px;
 font-size: 25px;
-background: blue;
+background:#2020a8f5;
 text-align: center;
 padding: 40px;
-margin-bottom: 10px;
+border-bottom: 1px solid rgb(235, 233, 233);
 
 }
 
