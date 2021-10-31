@@ -181,15 +181,28 @@ border-bottom: azure 1px solid;
 
 
 .footer {
-   display:flex;
-   height: 400px;
-   background-color: cornsilk;
+   background-color:rgb(238, 238, 238) ;
 }
 
 .footer-header {
-   height: 35%;
-   background-color: darkgrey;
+   height:100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: white 1px solid;
 }
 .footer-header h2 {
    font-size: 25px;
+   font-weight: 700;
+   color: rgb(7, 34, 85);
+}
+
+.forms {
+   display: flex;
+   height: 400px; flex: ;
+}
+.return-form-wrapper {
+   width: 50%;
+   border-right: white 1px solid;
+
 }
