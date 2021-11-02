@@ -1,6 +1,7 @@
 body {
    display: flex;
    flex-direction: column;
+   font-family: charm;
 
 }
 
@@ -212,12 +213,15 @@ border-bottom: azure 1px solid;
    line-height: 1.3;
    font-size: 18px;
 }
+.social-text {
+   margin-bottom: 60px;
+}
 
 .social-text:first-child{
    font-size: 20px;
 }
- hr {
-   width:100px;
-   line-height: 2px;
-   color: black;
+
+.social hr {
+   width: 360px;
+   border: 0.1px solid black;
 }
