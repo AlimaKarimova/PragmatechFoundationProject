@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+
+.header__container {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 30px;
+}
+
+.header__title {
+    font-size:25px;
+
+}
+.header__menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu ul li {
+    padding-right: 30px;
+}
+/* MAIN ................................................................*/
+
+.main-background {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
+.main-block-container {
+    height: 200px;
+    margin-top:-200px;
+}

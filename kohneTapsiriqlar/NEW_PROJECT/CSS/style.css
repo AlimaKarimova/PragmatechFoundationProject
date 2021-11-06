@@ -8,7 +8,6 @@ body {
 ._container {
    max-width: 1200px;
    margin: 0px auto;
-   padding: 0px 15px;
    box-sizing: content-box;
 }
 
@@ -20,10 +19,10 @@ body {
 /* HEADER>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .header {
    width: 100%;
-   min-height: 120px;
+   min-height: 100px;
    position: fixed;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    background-color: whitesmoke;
    color: rgb(4, 56, 87);
    font-weight: 400;
