@@ -6,7 +6,7 @@ body {
 .wrapper {
     min-height: 100%;
     position: relative;
-    overflow: hidden;
+    
 }
 
 .container {
@@ -36,13 +36,17 @@ body {
 }
 /* MAIN ................................................................*/
 
-.main-background {
+.main-background{
     width: 100%;
     height: 700px;
-    background-size: cover;
+    background-image: url(/kohneTapsiriqlar/NEW_PROJECT/image/main.jpg);
+    background-size: 100%;
 }
-
 .main-block-container {
-    height: 200px;
-    margin-top:-200px;
+    max-width: 900px;
+    height: 700px;
+    box-sizing:content-box;
+    margin: -550px auto;
+    z-index: 2;
+    background-color: aliceblue;
 }
