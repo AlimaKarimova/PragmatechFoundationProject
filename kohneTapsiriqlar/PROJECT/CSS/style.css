@@ -1,16 +1,12 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .wrapper {
     min-height: 100%;
     position: relative;
-    
-}
-
-main{
-    flex: 1 1 auto;
 }
 
 .container {
@@ -48,14 +44,43 @@ padding-right: 30px;}
 /* MAIN ................................................................*/
 
 
-.main-background{
+#main-background{
     width: 100%;
     height: 700px;
     background-image: url(/kohneTapsiriqlar/PROJECT/IMAGE/main.jpg);
     background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+
 }
 
+
+#main-block{
+    width: 950px;
+    height: 700px;
+    box-sizing: border-box;
+    margin: -600px auto -600px auto;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns:  repeat(2, 1fr);
+
+}
+
+.item-image {
+background-image: url(/kohneTapsiriqlar/PROJECT/IMAGE/girl-image.webp);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 /* ABOUT-ME.............................................................*/
 
