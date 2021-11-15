@@ -2,6 +2,7 @@
 .wrapper {
    min-height: 100%;
    margin: 0 auto;
+   font-size: 14px;
 }
  
 
@@ -28,7 +29,7 @@
 .header-cap img{
    height: 20px;
    width: 20px;
-   margin-left: 5px;
+   margin-left: 8px;
 }  
 
 
@@ -75,5 +76,35 @@
 /*MAIN........................................*/
 
 .main-image {
-   
+   height: 500px;
+  background-image:url(/ProjectFrontEnd/image/esas-sekil.jpg); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.main-list .container {
+   height: 150px;
+   display: grid;
+   grid-template-columns: repeat(5, 230px);
+   gap: 10px;
+   margin-top:-100px;
+}
+.item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: white;
+   z-index: 2;
+   border: green 1px solid;
+   border-radius: 5%;
+   box-shadow: grey 5px 5px;
+}
+.item img {
+   height: 70px ;
+   width: 70px;
+   margin-bottom: 30px;
+}
+.item p {
+   font-size: 17px;
 }
