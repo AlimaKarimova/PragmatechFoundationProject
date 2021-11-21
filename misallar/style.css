@@ -1,0 +1,11 @@
+.box {
+   width: 1000px;
+   height: 600px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr ;
+   grid-area: elave ela vela vela  ;
+}
+.item {
+   border: black 1px solid;
+}
