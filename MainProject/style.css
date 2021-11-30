@@ -106,9 +106,9 @@
    width: 100%;
    margin: 30px auto;
 }
-.profile-social-list {
-   height: 80px;
-   background-color: #07cb79;
+.profile-social-list img {
+   height: 30px;
+   width: 30px;
 }
 .button .btn {
    display: flex;
@@ -153,6 +153,7 @@
    position: relative;
    height: 90px;
    margin-bottom: 100px;
+   line-height: 2;
 }
 .timebox {
    position: relative;
@@ -161,6 +162,9 @@
    padding: 30px;
    border-top:5px solid #07cb79;
    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    
 }
 .left {
@@ -177,11 +181,31 @@
    position: absolute;
    top: 0%;
    left: 50%;
-   height:100%;
+   height: calc(100%);
    width: 4px;
    width: 4px;
    background-color: #07cb79;
    opacity: 0.2;
+}
+.left::after{
+   content: '';
+   position: absolute;
+   top: 37px;
+   left: 473px; 
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color:#07cb79;
+}
+.date {
+   color: #07cb79;
+   font-weight: 600;
+   font-size: 0.9em;
+}
+.timebox p {
+   opacity: 0.9;
+   font-size: 0.9em;
+
 }
 
 
