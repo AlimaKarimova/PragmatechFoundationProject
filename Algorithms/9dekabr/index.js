@@ -8,4 +8,3 @@ function printUpperCase(lowerString) {
 }
 console.log(printUpperCase('salam sen necesen'))
 
-function printSentenceLength(a) 
