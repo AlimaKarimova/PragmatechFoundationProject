@@ -18,6 +18,25 @@ document.querySelector('img').style.border= 'thick solid yellow'
 }
 
 function sekliDeyis(){
-   document.getElementById('image').src= '/Algorithms/16dekabr/images/images(5).jpeg'
+   document.getElementById('image').src= '/Algorithms/18dekabr/g83rrbcpsylwwxn9p92q.jpg'
 }
 
+function countSayHerf(){
+   let a = document.querySelector('.metn').innerHTML.length
+   let b = document.querySelector('.netice').innerHTML
+   document.querySelector('.netice').innerHTML = b + a
+}
+
+function proqramciSozunuTap(){
+let a = document.querySelector('.tovsiyeler').innerHTML.includes('Proqramçı')
+let b = document.querySelector('.netice').innerHTML
+if (a = true) {
+   document.querySelector('.netice').innerHTML = b + 'var'
+} else{
+   document.querySelector('.netice').innerHTML = b + 'yoxdur'
+}
+}
+
+function yeriniDeyis(){
+   document.querySelector('.ul.li').innerHTML.reverse()
+}
