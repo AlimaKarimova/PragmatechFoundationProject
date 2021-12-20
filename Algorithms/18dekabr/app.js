@@ -37,6 +37,9 @@ if (a = true) {
 }
 }
 
-function yeriniDeyis(){
-   document.querySelector('.ul.li').innerHTML.reverse()
+function herflerinYeriniDeyis(){
+let a = document.querySelector('.metn').innerHTML
+let b = a.replace('e','ə')
+document.querySelector('.metn').innerHTML = b;
+ 
 }
