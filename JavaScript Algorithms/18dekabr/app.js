@@ -39,7 +39,7 @@ if (a = true) {
 
 function herflerinYeriniDeyis(){
 let a = document.querySelector('.metn').innerHTML
-let b = a.replace('e','ə')
+let b = a.replaceAll('e','ə')
 document.querySelector('.metn').innerHTML = b;
  
 }
