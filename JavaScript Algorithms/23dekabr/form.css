@@ -1,0 +1,16 @@
+body{
+   height: 100vh;
+   width: 100%;
+
+}
+
+form{
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+ul{
+list-style-type: none;
+}
