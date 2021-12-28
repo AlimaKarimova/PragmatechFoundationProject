@@ -12,13 +12,21 @@ if (birthday<15) {
    alert('sizin 15 yasiniz yoxdur')
 }
 }
-let a = document.getElementById('phone').innerHTML
-function nomreniDuzgunYaz() {
-   if (a!='+994') {
-      alert('nomreni duzgun yaz')
-   }
+let birthday=document.getElementById('birthday').innerHTML
+function birthdayTeyinEt() {
+if (birthday<15) {
+   alert('sizin 15 yasiniz yoxdur')
+}
 }
 
 
++
+let email=document.querySelector('#email').innerHTML
+function isareOlmalidi() {
+ for (let i = 0; i < email.length; i++) 
+ if (email[i]!='@') {
+    alert('@ simvolumutleq olmalidi')
+    
+ }
 
-
+}

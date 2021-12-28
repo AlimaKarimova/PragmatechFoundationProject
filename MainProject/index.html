@@ -8,9 +8,9 @@
    <link rel="stylesheet" href="/MainProject/style.css">
    <link rel="stylesheet" href="/MainProject/reset.css">
    <link rel="stylesheet" href="/MainProject/col.css">
-   <link rel="stylesheet" href="https://www.freepik.com/free-vector/black-rounded-social-media-icons-set_2395705.htm#page=1&query=social%20media%20icon&position=17&from_view=keyword">
+
 </head>
-<body>
+<body onscroll="getAnimation()">
 
    <div class="wrapper">
       <header class="header">
@@ -135,35 +135,49 @@
          <h2 class="header-style">EXPERIENCE</h2>
          <div class="timeline container">
             <div class="line"></div>
-            <div class="timebox left">
+            <div class="timebox left" class="animation">
                <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="timebox right">
+            <div class="timebox right" class="animation">
                <p>Lorem ipsum dolor sit amet.</p>
             </div>
       </div>
-
-
-
-
 
    </div>
    <footer class="footer">
       <div class="contact-me container">
-         <div class="contact-me-text">
-         <h2>Feel free to contact me</h2>
-         <h3>NAME</h3> <hr>
-         <h3>E-MAIL</h3> <hr>
-         <h3>SUBJECT</h3> <hr>
-         <h3>MESSAGE</h3> <hr>
-         <div class="btn">
-            <input type="button" class="btn" value="SEND">
-         </div>   
-         </div>
-
+            <ul class="contact-list">
+               <li>
+                 <span style="font-size:1.5em;">Feel free to contact me
+                 </span>
+                 <hr>
+               </li>
+               <li>
+                  <span>name</span>
+                  <hr>
+               </li>
+               <li>
+                  <span>email</span>
+                  <hr>
+               </li>
+               <li>
+                  <span>subject</span>
+                  <hr>
+               </li>
+               <li>
+                  <span>message</span>
+                  <hr>
+               </li>
+               <li>
+                  <span>
+                     <input type="button" value="send">
+                  </span>
+               </li>
+            </ul>
       </div>
    </footer>
 
+   
 
 
 
@@ -174,8 +188,6 @@
 
 
 
-
-
- 
+ <script src="/MainProject/app.js"></script>
 </body>
 </html>
