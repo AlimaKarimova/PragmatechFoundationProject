@@ -3,13 +3,11 @@
 .container {
    max-width: 950px;
    margin: 0 auto;
-   box-sizing:border-box;
 }
+
 .header-style {
    text-align: center;
-   font-size: 32px;
-   font-weight: 600;
-   margin-bottom: 50px;
+   margin-bottom: 50px; 
 }
 /*..................................................*/
 
@@ -19,9 +17,7 @@
    display: flex;
    flex-direction: column;
    background-color:#efefef;
-   font-size: 18px;
    color: #3d4451;
-   font-family:"Open Sans", sans-serif;
 }
 
 
@@ -32,30 +28,26 @@
   justify-content: end;
   z-index: 3;
 }
-.header-nav ul {
+.nav-list {
    display: flex;
    justify-content: space-between;
 }
-.header-nav ul li {
+.nav-list li {
    margin: 20px 20px;
+   font: 0.9rem 800;
 }
-.header-nav ul li a{
+.nav-list li a{
    color: rgba(255, 255, 255, 0.7);
-   font-size: 13px;
-   font-weight: 700;
-   line-height: 1;
    text-transform: uppercase;
 }
 .header-nav ul li a:hover{
-   transition: 3ms linear ;
+   transition: 0.8ms linear;
    border-bottom: 3px solid #07cb79;
 }
 
 .header-bg {
    background-image: url(/MainProject/picture/rs-cover.jpg);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+   background:center cover no-repeat;
    position: absolute;
    width: 100%;
    height: 500px;
@@ -92,8 +84,8 @@
    margin-right: 50px;
 }
 .profile-title-text {
-   line-height:1.3em;
-   font-size: 1.3em;
+   line-height:1.3rm;
+   font-size: 1.3rm;
 }
 .profile-title-content ul li  {
    display: flex;
@@ -136,8 +128,8 @@
    justify-content: center;
    align-items: center;
    margin-bottom: 50px;
-   line-height: 1.8em;
-   font-size: 1.1em;
+   line-height: 1.8rem;
+   font-size: 1.1rem;
 }
 .about-me p{
    margin-bottom: 150px;
@@ -150,8 +142,8 @@
    margin-bottom: 150px;
 }
 .timeline {
-   position: relative;
    height: 90px;
+   position: relative;
    margin-bottom: 100px;
    line-height: 2;
 }
@@ -183,7 +175,7 @@
    position: absolute;
    top: 0%;
    left: 50%;
-   height: calc(100%);
+   height:100%;
    width: 4px;
    width: 4px;
    background-color: #07cb79;
@@ -203,12 +195,11 @@
 .date {
    color: #07cb79;
    font-weight: 600;
-   font-size: 0.9em;
+   font-size: 0.9rem;
 }
 .timebox p {
    opacity: 0.9;
-   font-size: 0.9em;
-
+   font-size: 0.9rem;
 }
 
 
