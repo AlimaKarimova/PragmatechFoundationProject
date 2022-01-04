@@ -1,185 +1,144 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="/MainProject/style.css">
-   <link rel="stylesheet" href="/MainProject/reset.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="reset.css">
    <link rel="stylesheet" href="/MainProject/col.css">
-
 </head>
-<body>
+<body onscroll="changeNav()">
 
    <div class="wrapper">
       <header class="header">
          <div class="header-nav">
-            <ul class="nav-list">
-               <li><a href="">ABOUT ME</a></li>
-               <li><a href="">EDUCATION</a></li>
-               <li><a href="">SKILLS</a></li>
-               <li><a href="">EXPERIENCE</a></li>
-               <li><a href="">CONTACT</a></li>
-               <li><a href="">CV</a></li>
-            </ul>
+            <div class="header-nav-box">
+               <ul class="nav-list">
+                  <li><a class="nav-a" href="#about">about</a></li>
+                  <li><a class="nav-a" href="#education">education</a></li>
+                  <li><a class="nav-a" href="#skills">skills</a></li>
+                  <li><a class="nav-a" href="#experience">experience</a></li>
+                  <li><a class="nav-a" href="#contact">contact</a></li>
+               </ul>
+            </div>
          </div>
          <div class="header-bg"></div>
-
-      </header>
-      <div class="profile-box">
-         <div class="profile container">
-            <div class="row ">
-               <div class="col-5">
-                  <div class="profile-image">
-                    
+        </header>
+        <div class="content">
+           <div class="container">
+            <div class="profile">
+               <div class="profile-box">
+                  <div class="profile-information">
+                     <div class="row">
+                        <div class="col-5">
+                           <div class="profile-img"></div>
+                        </div>
+                        <div class="col-7">
+                           <div class="profile-title">
+                              <h2><strong>Alima Karimova</strong></h2>
+                              <p>Web Developer</p>
+                           </div>
+                           <div class="profile-text">
+                              <ul class="column-1">
+                                 <li>AGE</li>
+                                 <li>ADDRESS</li>
+                                 <li>E-MAIL</li>
+                                 <li>PHONE</li>
+                              </ul>
+                              <ul class="column-2">
+                                 <li>29</li>
+                                 <li>Gabala city</li>
+                                 <li>way.s@inbox.ru</li>
+                                 <li>+994-51-724-44-55</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-               </div>
-               <div class="col-7">
-                  <div class="profile-title">
-                     <div class="profile-title-text">
-                        <strong>Alima Karimova</strong> 
-                        <p>Web Developer</p>
-                     </div>
+                  <div class="profile-social"></div>
+                  <div class="btn-resume">
+                     <input type="button" class="btn-lg" value="DOWNLOAD RESUME">
+                  </div>
+                </div> 
+            </div>   
+            <div class="about">
+                <div class="about-text">
+                   <h2 class="header-style">ABOUT ME</h2> <br>
+                   <p>Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. S</p>
+                </div>
+            </div>
+            <div class="education"> </div>
+            <div class="skills">
+                <h2 class="header-style">SKILLS</h2>
+                <div class="skills-list">
+                  <div class="skills-name">
+                     <p>HTML/CSS</p>
                      <hr>
-                     <div class="profile-title-content">
-                        <ul>
-                           <li>
-                              <strong>Age:</strong>
-                              <span>29</span>
-                           </li>
-                           <li>
-                              <strong>E-mail:</strong>
-                              <span>way.s@inbox.ru</span>
-                           </li>
-                           <li>
-                              <strong>Phone:</strong>
-                              <span>+994(51-724-44-55)</span>
-                           </li>
-                        </ul>
-                     </div>
+                  </div>
+                  <div class="skills-name">
+                     <p>JavaScript</p>
+                     <hr>
+                  </div>
+                  <div class="skills-name">
+                     <p>SQL/SQLite</p>
+                     <hr>
+                  </div>
+                  <div class="skills-name">
+                     <p>Python</p>
+                     <hr>
+                  </div>
+                  <div class="skills-name">
+                     <p>Flask Framework</p>
+                     <hr>
+                  </div>
+                  <div class="skills-name">
+                     <p>React</p>
+                     <hr>
+                  </div>
+                </div>
+            </div>
+            <div class="experience"></div>
+            <footer class="footer">
+               <div class="header-style">CONTACT ME</div>
+               <div class="footer-box">
+                  <div class="footer-contact">
+                     <h3>FEEL FREE TO CONTACT ME</h3>
+                     <ul>
+                        <li>NAME</li>
+                        <li>E-MAIL</li>
+                        <li>SUBJECT</li>
+                        <li>MESSAGE</li>
+                     </ul>
+                     <input type="button" class="btn-footer" value="SEND">
+                  </div>
+                  <div class="footer-map">
                      
                   </div>
                </div>
-            </div>
+            </footer>
+          </div>
          </div>
-         <div class="profile-social">
-            <div class="col-12">
-               <div class="profile-social-list container">
-               </div>
-            </div>
-         </div>
- <div class="button">
-         <div class="btn">
-            <input type="button" class="btn-lg" value="CV DOWNLOAD">
-         </div>  
-      </div>
+   </div>
+     
+
+         
+   
 
 
 
-      </div>   
-      <div class="about-me container">
-         <div class="about-me-text">
-            <h2 class="header-style">ABOUT ME</h2> <br>
-            <p>Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. S</p>
-         </div>
-      
-      </div>
-      <div class="education">
-         <h2 class="header-style">EDUCATION</h2> <br>
-         <div class="timeline container">
-            <div class="line"></div>
-            <div class="timebox left">
-               <p class="date">2010-2014</p>
-               <h3>ADİU</h3>
-               <p>Azərbaycan Dövlət İqtisadiyyat Universitetinin Biznes İnzibatçılığı fakültəsini Biznesin İdarə Edilməsi ixtisası üzrə bitirmişəm.</p>
-            </div>
-            <div class="timebox right">
-               <p class="date">2021-2022</p>
-               <h3>PRAGMATECH</h3>
-               <p>Pragmatech Education and Development Center</p>
-            </div>
-         </div>
-      </div>
-      <div class="skills">
-         <h2 class="header-style">SKILLS</h2>
-         <div class="skills-list container">
-            <div class="skills-name">
-               <p>HTML/CSS</p>
-               <hr>
-            </div>
-            <div class="skills-name">
-               <p>JavaScript</p>
-               <hr>
-            </div>
-            <div class="skills-name">
-               <p>SQL/SQLite</p>
-               <hr>
-            </div>
-            <div class="skills-name">
-               <p>Python</p>
-               <hr>
-            </div>
-            <div class="skills-name">
-               <p>Flask Framework</p>
-               <hr>
-            </div>
-            <div class="skills-name">
-               <p>React</p>
-               <hr>
-            </div>
-         </div>
-
-      </div>
-      <div class="experience">
-         <h2 class="header-style">EXPERIENCE</h2>
-         <div class="timeline container">
-            <div class="line"></div>
-            <div class="timebox left" class="animation">
-               <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="timebox right" class="animation">
-               <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-      </div>
-
-      </div>
-      <div class="footer">
-         <div class="contact-me container">
-            <ul class="contact-list">
-               <li>
-                 <span style="font-size:1.5em;">Feel free to contact me
-                 </span>
-                 <hr>
-               </li>
-               <li>
-                  <span>name</span>
-                  <hr>
-               </li>
-               <li>
-                  <span>email</span>
-                  <hr>
-               </li>
-               <li>
-                  <span>subject</span>
-                  <hr>
-               </li>
-               <li>
-                  <span>message</span>
-                  <hr>
-               </li>
-               <li>
-                  <span>
-                     <input type="button" value="send">
-                  </span>
-               </li>
-            </ul>
-      </div>
-      </div>
 
    
 
 
 
+
+
+
+
+
+
+<script src="/MainProject/pp.js"></script>
 </body>
 </html>
