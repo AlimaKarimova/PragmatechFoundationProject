@@ -4,6 +4,7 @@ body{
    display: flex;
    flex-direction: column;
    font-family: "Open Sans", sans-serif;
+   color: black;
 }
 .wrapper{
    background-color: rgb(241, 241, 241);
@@ -19,6 +20,21 @@ body{
    font-weight: 700;
    color: rgba(0, 0, 0, 0.664);
 }
+.bg-white{
+   position: fixed;
+   z-index: 4;
+   left: 0;
+   right: 0;
+   width: 100%;
+   min-height: 80px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   padding: 15px;
+   background-color:whitesmoke;
+}
+
+/**HEADER...........................................*/
 
 
 .header-nav {
@@ -26,33 +42,31 @@ body{
 }
 .header-nav-box {
    position: fixed;
-   z-index: 3;
+   z-index: 4;
    left: 0;
    right: 0;
    width: 100%;
-   min-height: 100px;
+   min-height: 80px;
    display: flex;
    justify-content: end;
    align-items: center;
    padding: 15px;
+   background-color: transparent;
 }
 .nav-list{
    display: flex;
    justify-content: space-between;
 }
-.nav-list li a{
+.nav-a{
    text-transform: uppercase;
    margin-right: 20px;
-   color:rgba(255, 255, 255, 0.699);
    font-size: 0.9rem;
    font-weight: 700;
+   color: rgba(255, 255, 255, 0.719);
 }
-.nav-list li a:hover{
+.nav-a:hover{
    border-bottom: rgb(79, 207, 79) 2px solid;
-   animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
-   animation-duration: 1s;
 }
-
 .header-bg{
    position: absolute;
    left: 0;
@@ -73,11 +87,16 @@ body{
    position: absolute;
    background-color: rgba(44, 51, 64, 0.8);
 }
+
+
+/*PROFILE..................................................*/
+
+
 .profile-information{
    position: relative;
    margin-top: 165px;
    background-color: white;
-   z-index: 10;
+   z-index: 2;
    padding: 40px; 
 }
 .profile-img{
@@ -88,22 +107,22 @@ body{
    background-position:center ;
    margin-right: 50px;
 }
-.profile-list{
-   color: black;
+.profile-title{
+   font-size: 2rem;
+   color: rgba(0, 0, 0, 0.726);
+   padding-bottom: 25px;
+   margin-top: 15%;
+   margin-bottom: 15%;
+   border-bottom: 1px solid #dedede;
 }
-.pr{
-   border-bottom: 1.5px solid rgba(0, 0, 0, 0.247);
-}
-.pr-list{
-   margin-top: 20%;
+.profile-text{
    display: flex;
-   flex-direction: column;
-   color: black;
+   font-size: 1.1rem;
+   line-height: 2rem;
 }
-
-.pr-text{
-   margin-right: 120px;
-
+.column-1{
+   margin-right: 40px;
+   font-weight: 600;
 }
 .profile-social {
    height: 80px;
@@ -126,23 +145,36 @@ body{
    font-size: 1.2rem;
    font-weight: 600;
 }
+
+
+/*ABOUT..................................................*/
+
+
 .about {
+   margin-bottom: 150px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-bottom: 300px;
    font-size: 1.5rem;
    line-height:2.3rem;
    color: #3d4451be;
 }
 
+
+/*EDUCATION...............................................*/
+
+
 .education {
-   margin-bottom: 300px;
+   margin-bottom: 150px;
    position: relative;
 }
 
-.skills {
+
+/*SKILLS...................................................*/
+
+
+.skills {   
    margin-bottom: 150px;
 }
 .skills-list {
@@ -151,6 +183,8 @@ body{
    grid-template-columns: repeat(2, 1fr);
    background-color: white;
    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+   font-size: 1.1rem;
+   color: rgb(104, 104, 104);
 }
 .skills-name {
    padding: 15px 30px;
@@ -164,56 +198,8 @@ body{
    background-color: #07cb79;
 }
 
+
+/*EXPERIENCE...............................................*/
 .experience {
    margin-bottom: 150px;
 }  
-
-.timeline{
-   position: relative;
-   width: 100%;
-   display: flex;
-   column-gap: 40px;
-   width: calc(50%-40px);
-}
-.timebox{
-   position: relative;
-   z-index: 2;
-   background-color: white;
-   padding: 20px;
-   border-top: 2px solid #07cb79;
-}
-
-.timebox::before{
-   position: absolute;
-   content:" ";
-   top: 50%;
-   transform: translateY(-50%);
-   width: 15px;
-   height: 15px;
-   background-color: white;
-   transform: rotate(45deg);
-   z-index:1;
-}
-.left{
-   justify-content: flex-start;;
-
-}
-.left::before{
-   right: -7px;
-}
-.right{
-   top: 20px;
-   justify-content: flex-end;
-}
-.right::before{
-   left:-7px ;
-
-}
-.line{
-   position: absolute;
-   z-index: 2;
-   left:51%;
-   width: 2px;
-   height: 100%;
-   background-color: #07cb79;
-}
