@@ -3,7 +3,7 @@ body{
    min-height: 100vh;
    display: flex;
    flex-direction: column;
-   font-family: "Open Sans", sans-serif;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    color: black;
 }
 .wrapper{
@@ -53,18 +53,18 @@ body{
    padding: 15px;
    background-color: transparent;
 }
-.nav-list{
+.ul-nav{
    display: flex;
    justify-content: space-between;
 }
-.nav-a{
+.ul-nav-a{
    text-transform: uppercase;
    margin-right: 20px;
    font-size: 0.9rem;
    font-weight: 700;
    color: rgba(255, 255, 255, 0.719);
 }
-.nav-a:hover{
+.ul-nav-a:hover{
    border-bottom: rgb(79, 207, 79) 2px solid;
 }
 .header-bg{
@@ -115,6 +115,10 @@ body{
    margin-bottom: 15%;
    border-bottom: 1px solid #dedede;
 }
+.profile-title p{
+   margin-top: 10px;
+   font-size: 1.4rem;
+}
 .profile-text{
    display: flex;
    font-size: 1.1rem;
@@ -125,8 +129,17 @@ body{
    font-weight: 600;
 }
 .profile-social {
-   height: 80px;
+   max-height: 80px;
    background-color: #07cb79;
+   padding: 5% 30%;
+}
+.ul-social{
+   display: flex;
+   justify-content:space-between;
+}
+.ul-social i{
+   color: white;
+   font-size: 1.7rem;
 }
 .btn-resume { 
    display: flex;
@@ -146,7 +159,6 @@ body{
    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.384);  
    transition: all 0.3s ease-out;
 }
-
 /*ABOUT..................................................*/
 
 
