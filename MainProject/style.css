@@ -128,24 +128,24 @@ body{
    height: 80px;
    background-color: #07cb79;
 }
-.btn-resume {
+.btn-resume { 
    display: flex;
    justify-content: center;
    align-items: center;
    margin: 80px auto;
-   width: 240px;
+   width: 200px;
    height: 50px;
    border: 1px solid #cbcdcf;
-   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.384);
-
-}
-.btn-lg {   
    background-color: transparent;
    color: #3d4451c7;
    font-size: 1.2rem;
    font-weight: 600;
 }
-
+.btn-resume:hover{
+   transform:scale(1.1);
+   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.384);  
+   transition: all 0.3s ease-out;
+}
 
 /*ABOUT..................................................*/
 
@@ -167,7 +167,6 @@ body{
 
 .education {
    margin-bottom: 150px;
-   position: relative;
 }
 
 
@@ -206,19 +205,75 @@ body{
 
 
 /*FOOTER.....................................................................*/
-
-
-.footer-box{
-   padding: 50px;
-   display: flex;
-   justify-content: space-between;
-}
+.row{
+   column-gap: 30px;
+}   
 .footer-contact{
    padding: 30px 40px;
-   width: 50%;
    line-height: 5rem;
    background-color: white;
+
 }
 .footer-contact ul li{
-   border-bottom: #07cb79 1px solid;
+   border-bottom: gainsboro 1px solid;
+}
+.btn-footer{
+   width: 130px;
+   height: 40px;
+   background-color: #07cb79;
+   border-radius: 5%;
+   color: white;
+   font-weight: 700;
+   box-shadow: 11px 12px 33px 0px rgba(37, 37, 37, 0.3);
+}
+
+/*TIMELINE......................................................*/
+.timeline{
+   position: relative;
+   width: 100%;
+   height: min-content;
+   display: flex;
+   column-gap: 40px;
+   width: calc(50%-40px);
+}
+.timebox{
+   position: relative;
+   z-index: 2;
+   background-color: white;
+   padding: 20px;
+   border-top: 2px solid #07cb79;
+}
+.timebox::before{
+   position: absolute;
+   content:" ";
+   top: 50%;
+   transform: translateY(50%);
+   width: 15px;
+   height: 15px;
+   background-color: white;
+   transform: rotate(45deg);
+   z-index:1;
+}
+.left{
+   justify-content: flex-start;;
+
+}
+.left::before{
+   right: -7px;
+}
+.right{
+   top: 20px;
+   justify-content: flex-end;
+}
+.right::before{
+   left:-7px ;
+
+}
+.line{
+   position: absolute;
+   z-index: 2;
+   left: 50%;
+   width: 2px;
+   height:100%;
+   background-color: #07cb79;
 }
