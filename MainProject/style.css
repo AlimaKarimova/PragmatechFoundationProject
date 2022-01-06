@@ -240,52 +240,52 @@ body{
 }
 
 /*TIMELINE......................................................*/
-.timeline{
+.timeline {
    position: relative;
-   width: 100%;
-   height: min-content;
-   display: flex;
-   column-gap: 40px;
-   width: calc(50%-40px);
-}
-.timebox{
+   width: 70%;
+   margin: 0 auto;
+ }
+ .timebox {
+   padding: 50px 20px;
    position: relative;
-   z-index: 2;
-   background-color: white;
-   padding: 20px;
-   border-top: 2px solid #07cb79;
-}
-.timebox::before{
-   position: absolute;
-   content:" ";
-   top: 50%;
-   transform: translateY(50%);
-   width: 15px;
-   height: 15px;
-   background-color: white;
-   transform: rotate(45deg);
-   z-index:1;
-}
-.left{
-   justify-content: flex-start;;
+   background-color:white;
+   border-top: 5px solid #07cb79;
+   width: 49%;
+   border-radius: 2px;
+ }
+ .left {
+    position: relative;
+   left: 0;
+ }
+ .right {
+   left: 51%;
+ }
+ .line{
+      content: '';
+      position: absolute;
+      width: 3px;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color:#07cb79;
+    
+ }
 
-}
-.left::before{
-   right: -7px;
-}
-.right{
-   top: 20px;
-   justify-content: flex-end;
-}
-.right::before{
-   left:-7px ;
+ /*romb*/
 
-}
-.line{
-   position: absolute;
-   z-index: 2;
-   left: 50%;
-   width: 2px;
-   height:100%;
-   background-color: #07cb79;
-}
+ .timebox::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color:#07cb79;
+    transform: rotate(45deg);
+    z-index: 3;
+ }
+
+ .left::after{
+    position: absolute;
+    rig
+ }
