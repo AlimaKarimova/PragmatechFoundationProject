@@ -1,10 +1,9 @@
-/**let form=document.querySelector('form').innerHTML
+let form=document.querySelector('form').innerHTML
 function bosBuraxma(){
 for(let i=0; i<form.length; i++)
-if (form[i]!==0) {
+if (form[i]==0) {
    alert('sahe bos buraxila bimez')   
 }
-}**/
 
 let birthday=document.getElementById('birthday').innerHTML
 function birthdayTeyinEt() {
