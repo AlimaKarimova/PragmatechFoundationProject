@@ -1,9 +1,0 @@
-3+(2-true+false)/3&&true
-1.	Moterizenin ici 2-1+0
-2.	1/3
-3.	1/3&&3 her iki teref true netice true yeni 1
-3+1=4
-
-3=='3'==='3'
-Beraberlik operatoru her iki terefi reqeme cevirir 3==3 true
-3===’3’ ciddi beraberlik ise data tiplerini deyismir ona gore netice false

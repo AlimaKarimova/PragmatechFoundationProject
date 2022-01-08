@@ -342,3 +342,13 @@ body{
 }
 
 
+.f-social{
+   margin: 50px;
+   font-size: 1.8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.f-social a{
+   color: hsl(0, 0%, 76%);
+}
