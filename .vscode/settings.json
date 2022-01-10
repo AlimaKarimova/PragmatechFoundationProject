@@ -1,4 +1,4 @@
 {
    "typescript.disableAutomaticTypeAcquisition": true,
-   "livePreview.defaultPreviewPath": "/FrontEndProject/index.html"
+   "livePreview.defaultPreviewPath": ""
 }
