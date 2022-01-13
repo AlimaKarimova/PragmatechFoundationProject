@@ -23,15 +23,20 @@
 # print(text[:125])
 
 
-#5.Bir sətir koddan istifadə edərək aşağıdakı yazını göründüyü kimi çapa verin. Languages: Python C JavaScript
-# print('Languages: Python C JavaScript')
+#5.Bir sətir koddan istifadə edərək aşağıdakı yazını göründüyü kimi çapa verin. Languages: Python C JavaScript..................................
+# print('Languages:\n Python\n C\n JavaScript\n')
 
 
 # 3.sep parametrindən istifadə edərək 4 müxtəlif şəhər adını * işarəsi ilə ayırın.............................
 # print('BAKI','SEKI', 'QUBA', 'AGDAS',sep='*')
 
 
-#7. x = 10, y = 55 “and”-dən istifadə edərək x və y müqayisə edərək boolen dəyərləri çapa verin.
+#7. x = 10, y = 55 “and”-dən istifadə edərək x və y müqayisə edərək boolen dəyərləri çapa verin.................................................
+# x=10
+# y=55
+# print(bool(x>y))
+# print(bool(x<y))
+
 
 
 # 8.inputdan boshluqla ayrilmish iki eded daxil edin. Birinci ededi ikinci eded qeder quvvete yukseldin ve ashagidaki kimi ekrana yazdirin (f stringden istifade ederek).........................................................................................................
@@ -59,10 +64,30 @@
 # print(onlarin_qaligi*onlarin_nisbeti)
 
 
-# 11. x-ə istənilən bir ədəd mənimsədin, sonra isə şərt verərək yoxlayın. X 10-dan böyükdürsə və cüt ədədirsə, ekrana “OKAY” yazılsın, əgər yuxarıdakı iki şərtdən biri ödənirsə “NOT OKAY” yazılsın, heç bir şərt ödənməzsə, “BAD” yazılsın
+# 11. x-ə istənilən bir ədəd mənimsədin, sonra isə şərt verərək yoxlayın. X 10-dan böyükdürsə və cüt ədədirsə, ekrana “OKAY” yazılsın, əgər yuxarıdakı iki şərtdən biri ödənirsə “NOT OKAY” yazılsın, heç bir şərt ödənməzsə, “BAD” yazılsın.............................................
+# x=13
+# if x>10 and x%2==0:
+#    print('okay')
+# elif x>10 or x%2==0:
+#    print('not okay')
+# else:
+#    print('bad')   
 
 
-# 12.  iki ədəd götürüb dəyişkənlərə mənimsədin. Əgər ədələrin fərqi bir-birlərinə olan nisbətin tam hissəsindən böyükdürsə, ekrana “Greater”, bərabərdirsə, “EQUAL” yox əgər kiçikdirsə, “SMALLER” yazılsın.
+
+# 12.  iki ədəd götürüb dəyişkənlərə mənimsədin. Əgər ədələrin fərqi bir-birlərinə olan nisbətin tam hissəsindən böyükdürsə, ekrana “Greater”, bərabərdirsə, “EQUAL” yox əgər kiçikdirsə, “SMALLER” yazılsın...................................................................................
+# import math
+# x=13  
+# y=11
+# ferq=x-y
+# nisbet= math.trunc(x/y)
+# if ferq>nisbet:
+#    print('greater')
+# elif ferq==nisbet:
+#    print('equal')
+# else:
+#    print('smaller')
+   
 
 #13.  String data tipi yaradın və dəyərini 5.567-yə bərabər edin. Sonra bu dəyişkənin dəyərin 10- luqlara qədər yuvarlaqlaşdırın.................
 # import math
@@ -71,6 +96,11 @@
 # print(math.trunc(x))
 
 # 14. my_string = ‘f4.3989ts’. my_stringin ədədə bərabər olan hissəsin ilə özündən sonra gələn ən kiçik tam ədədə olan qüvvətini tapın
+# my_string = 'f4.3989ts'
+# eded= float(my_string[1:7])
+# eded_2=int(eded)+1
+# print(pow(eded, eded_2))
+
 
 # 15. 1 və 8 arasında random bir ədəd götürsün proqram, sonra isə o ədədin kvadrat kökünü tapın (random kitabxansini research edin)..............
 # import random
