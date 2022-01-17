@@ -20,20 +20,7 @@ body{
    font-weight: 700;
    color: rgba(0, 0, 0, 0.664);
 }
-.bg-white{
-   position: fixed;
-   z-index: 4;
-   left: 0;
-   right: 0;
-   width: 100%;
-   min-height: 80px;
-   display: flex;
-   justify-content: end;
-   align-items: center;
-   padding: 15px;
-   background-color:whitesmoke;
-   color: #3d4451;
-}
+
 /**HEADER...........................................*/
 .header-nav {
    position: relative;
