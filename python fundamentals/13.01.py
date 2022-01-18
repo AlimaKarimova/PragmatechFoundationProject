@@ -12,18 +12,28 @@
 # list.sort()
 # print(list[-1])
 
+# list = [110, 773, 322, 63, 1, 34, 5, 10]
+# maximum =list [0]
+# for i in list:
+#    if i > maximum:
+#     maximum = i
+
+# print(f"The maximum value is: {maximum}")
+
 
 
 # 3. Listin en kicik elementini min funksiyasini istifade etmededen tapan alqoritm yazin.
 # list=[12,26,75,89,45]
 # list.sort()
 # print(list[0])
-list=[12,26,75,89,45]
-eded=int(x)
-for x in range(len(list)):
-   x=1*range(len(x))
-   print
 
+# list = [110, 773, 322, 63, 1, 34, 5, 10]
+# minimum =list [0]
+# for i in list:
+#    if i < minimum:
+#     minimum = i
+
+# print(f"The minimum value is: {minimum}")
 
 
 # 4. Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2
