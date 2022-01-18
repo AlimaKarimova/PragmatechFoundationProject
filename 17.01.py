@@ -24,4 +24,10 @@
 
 # 4.stringlerin index metodunu ozunuz yazin
 
+# def index_metodu(a):
+#    index=-1
+#    for i in a:
+#       index+=1
+#       print(f'{i}-nin indeksi {index}')
 
+# index_metodu('salam')
