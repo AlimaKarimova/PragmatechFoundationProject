@@ -9,10 +9,14 @@ body{
 .wrapper{
    background-color: rgb(241, 241, 241);
 }
+
+/*Umumi conteyner klasi sehifenin icliyini mehdudlasdirir*/
 .container {
    max-width: 950px;
    margin: 0 auto;
 }
+
+/*umumi header-style klasi basliqlar ucun nezerde tutulub*/
 .header-style {
    text-align: center;
    margin-bottom: 50px; 
@@ -22,12 +26,13 @@ body{
 }
 
 /**HEADER...........................................*/
-.header-nav {
+.header {
    position: relative;
 }
-.header-nav-box {
-   position: fixed;
+.header-nav {
+   position: absolute;
    z-index: 4;
+   top: 0;
    left: 0;
    right: 0;
    width: 100%;
@@ -39,31 +44,29 @@ body{
    background-color: transparent;
    color: rgba(255, 255, 255, 0.719);
 }
-.header-nav-box ul{
+.header-nav ul{
    display: flex;
    justify-content: space-between;
 }
 .nav-link{
    text-transform: uppercase;
    margin-right: 20px;
-   font-size: 0.9rem;
+   font-size: 1rem;
    font-weight: 700;
    color: inherit;
+   border-bottom: 2px solid #07cb79;
+   padding-bottom: 5px;
 }
-.ul-nav-a:hover{
-   border-bottom: rgb(79, 207, 79) 2px solid;
-}
+
+/*headerin esas arxa fon sekli*/
 .header-bg{
    position: absolute;
    left: 0;
    right: 0;
    width: 100%;
    height: 500px;
-   background-image: url(/FrontEndProject/picture/cover.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+   background:url(/FrontEndProject/picture/cover.jpg) center/cover no-repeat ;}
+
 .header-bg::before {
    content: '';
    top: 0;
@@ -84,16 +87,12 @@ body{
 }
 .profile-img{
    height: 380px;
-   background-image: url(/FrontEndProject/picture/photo.jpg);
-   background-size:cover;
-   background-repeat: no-repeat;
-   background-position:center;
+   background: url(/FrontEndProject/picture/photo.jpg) center/cover no-repeat;
    margin-right: 15%;
 }
 .profile-title{
    font-size: 2rem;
    color: rgba(0, 0, 0, 0.726);
-   padding-bottom: 25px;
    padding: 15% 0 5% 0;
    border-bottom: 1px solid #dedede;
 }
@@ -109,11 +108,11 @@ body{
    background-color: #07cb79;
    padding: 5% 30%;
 }
-.ul-social{
+.profile-social ul{
    display: flex;
    justify-content:space-between;
 }
-.ul-social i{
+.profile-social ul i{
    color: white;
    font-size: 1.7rem;
 }
@@ -126,13 +125,12 @@ body{
    height: 50px;
    border: 1px solid #cbcdcf;
    background-color: transparent;
-   color: #3d4451c7;
-   font-size: 1.2rem;
-   font-weight: 600;
+   color: #3d4451;
+   font:600 1.2rem inherit inherit;
 }
 .btn-resume:hover{
    transform:scale(1.1);
-   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.384);  
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);  
    transition: all 0.3s ease-out;
 }
 /*ABOUT..................................................*/
@@ -142,8 +140,7 @@ body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   font-size: 1.5rem;
-   line-height:2.3rem;
+   font: 1.5rem/2.3rem inherit inherit;
    color: #3d4451be;
 }
 /*EDUCATION...............................................*/
@@ -187,18 +184,18 @@ body{
    margin: 0 auto;
  }
  .timebox {
-   padding: 30px 20px;
+   padding:5% 8%;
    width: 45%;
    position: relative;
    background-color:white;
    border-top: 5px solid #07cb79;
-   border-radius: 2px;
    box-shadow: 0 1px 6px rgb(0 0 0 / 12%);
    margin-bottom: 30px;
  }
  .left {
+
     position:relative;
-    top: 0%;
+    top: 0;
     left: 0;
  }
  .right {
@@ -210,10 +207,10 @@ body{
       content: '';
       position: absolute;
       width: 3px;
-      top: 0;
-      bottom: 0;
+      top:0;
+      bottom:0;
       left: 50%;
-      transform: translateX(50%);
+      transform: translateX(-50%);
       background-color:#07cb798e;
     
  }
@@ -226,15 +223,14 @@ body{
     height: 14px;
     background-color:white;
     transform: rotate(45deg);
-    z-index: 3;
  }
 .left::after{
     position: absolute;
-    right:-7px;
+    right:-6px;
 }
 .right::after{
    position: absolute;
-   left:-7px;
+   left:-6px;
 }
 
 /*daireler*/ 
@@ -249,11 +245,13 @@ body{
 }
 .left::before{
    position: absolute;
-   right: -13.5%;
+   right: -11.11%;
+   transform: translateX(50%);
 }
 .right::before{
    position: absolute;
-   left: -11.6%;
+   left: -11.11%;
+   transform: translateX(-50%);
 }
 
 
@@ -278,10 +276,6 @@ body{
    color: white;
    font-weight: 700;  
 }
-.btn-footer:hover{
-   transform:scale(0.9);
-   transition: all 0.s ease-out;
-}
 .footer-address{
    background-color: white;
    display: grid;
@@ -294,12 +288,7 @@ body{
    font-size: 1.2rem;
    color: #3d4451d3;
 }
-.ad-title-1{
-   margin-right: 40px;
-}
 .address-map{
-   width: 100%;
-   height: 100%;
 }
 .footer-social ul {
    display: flex;
