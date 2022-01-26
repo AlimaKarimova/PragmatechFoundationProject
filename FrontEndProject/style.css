@@ -3,7 +3,7 @@ body{
    min-height: 100vh;
    display: flex;
    flex-direction: column;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: 'Roboto Slab', serif;
    color: black;
 }
 .wrapper{
