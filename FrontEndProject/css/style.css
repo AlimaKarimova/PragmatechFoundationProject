@@ -5,6 +5,7 @@ body{
 }
 
 /* header styles */
+
 #header{
    position: relative;
    height: 500px;
@@ -26,9 +27,8 @@ body{
    justify-content: space-between;
 }
 .header-nav ul li a{
-   margin-right: 20px;
-   font-weight: 700;
-   font-size: 0.9em;
+   margin-right: 30px;
+   font: 700 0.9em 'Open Sans', sans-serif;
    text-transform: uppercase;
    color:rgba(255, 255, 255, 0.7);
 }  
@@ -50,29 +50,168 @@ body{
    background-color: rgba(44, 51, 64, 0.8);
 }
 
+/* header styles end */
+
+
 /* profile styles */
+
 #profile .container{
    position: relative;
    margin-top:-340px;
    background-color: white;
 }
 .profile-image{
-   height: 380px;
+   height: 330px;
    background: url(/FrontEndProject/picture/photo.jpg) center/cover no-repeat;
-   margin: 50px;
+   margin: 50px 50px 40px;
 }
-
+.profile-title{
+   line-height: 2rem;
+   margin: 100px 0px 50px;
+} 
+.title{
+   display: inline-block;
+   min-width: 90px;
+}
 .profile-social{
    display: flex;
-   justify-content:space-around;
+   justify-content:center;
    align-items: center;
-   height: 70px;
+   height: 90px;
    background-color: #07cb79;
-   padding: ;
 }
 .profile-social i{
    color: white;
-   font-size: 1.5rem;
+   font-size: 1.4rem;
+   margin-right: 60px;
+}
+.resume{
+   display: flex;
+   justify-content: center;
+}
+.resume-btn { 
+   margin: 80px auto 0px auto;
+   width: 200px;
+   height: 50px;
+   border: 1px solid #cbcdcf;
+   background-color: transparent;
+   color: #3d4451;
+   font:700 1rem  'Open Sans', sans-serif;
+}
+.resume-btn:hover{
+   transform:scale(1.1);
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);  
+   transition: all 0.3s ease-out;
 }
 
+
+/* #about styles */
+
+#about p {
+   font: 1.5rem/2rem 'Open Sans', sans-serif;
+   color: #3d4451be;
+}
+
+/* timeline styles */
+
+.timeline{    
+   position: relative;
+   width: 80%;
+   margin: 0 auto;
+}
+.timebox {
+   padding:5% 8%;
+   width: 45%;
+   position: relative;
+   background-color:white;
+   border-top: 5px solid #07cb79;
+   box-shadow: 0 1px 6px rgb(0 0 0 / 12%);
+   margin-bottom: 30px;
+}
+.left {
+
+    position:relative;
+    top: 0;
+    left: 0;
+}
+.right {
+    position:relative;
+    top:0%;
+    right: -55%;
+}
+.line{
+   content: '';
+   position: absolute;
+   width: 3px;
+   top:0;
+   bottom:0;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color:#07cb798e;
+}
+
+/*timebox-un dekorasiyasi*/
+
+.timebox::after{
+   content: "";
+   position: absolute;
+   top: 30%;
+   width: 14px;
+   height: 14px;
+   background-color:white;
+   transform: rotate(45deg);
+}
+.left::after{
+   position: absolute;
+   right:-6px;
+}
+.right::after{
+   position: absolute;
+   left:-6px;
+}
+
+/*daireler*/ 
+
+.timebox::before{
+   content: "";
+   position: absolute;
+   top: 30%;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color:#07cb79;
+}
+.left::before{
+   position: absolute;
+   right: -11.11%;
+   transform: translateX(50%);
+}
+.right::before{
+   position: absolute;
+   left: -11.11%;
+   transform: translateX(-50%);
+}
+
+/* skills styles */
+
+.skills-list {
+   display: grid;
+   grid-template-rows:repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   background-color: white;
+   box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+   font-size: 1.1rem;
+   color: rgb(104, 104, 104);
+}
+.skills-list-item{
+   padding: 15px 30px;
+   margin-bottom: 10px;
+}
+.skills-list-item hr {
+   height: 4px;
+   width: 100%;
+   margin-top: 4px;
+   background-color: #07cb79;
+   border-radius: 5px;
+}
 

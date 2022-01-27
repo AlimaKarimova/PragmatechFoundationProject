@@ -2,3 +2,13 @@
    max-width: 950px;
    margin: 0 auto;
 }
+
+.header-style {
+   text-align: center;
+   text-transform: uppercase;
+   margin:150px auto 50px; 
+   font-size: 2rem;
+   font-weight: 700;
+   color: rgba(0, 0, 0, 0.664);
+}
+
