@@ -3,60 +3,73 @@ body{
    background-color: white;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+
+
+
+/* header */
 #header{
    width: 100%;
    height: 650px;
    background:url(/FinalTasks/Task01/image/slide-03.jpg) center/cover;
 }
-
 .header-navbar{
    display: flex;
    justify-content: space-between;
 }
-
 .header-navbar-nav ul{
    display: flex;
 }
-
 .header-navbar-nav ul li a{
    color: white;
 }
+/* header */
+
 
 
 /* about */
-
-
-#about{  
+#about{
+   padding-top: 105px;
    text-align: center;
-}
-#about  .title{
-   margin: 100px auto 20px;
-   font-size: 36px;   
 }
 #about hr{
    width: 100%;
    height: 1px;
-   background-color: black;
-   margin: 50px auto;
+   background: #eee;
+   margin: 45px 0;
 }
+#about span{
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: 300;
+   color: #888;
 
+}
 #about p{
-   margin-bottom: 100px;
-   font-weight: 300px;
+   font-weight: 300;
+   line-height: 1.33333;
    font-size: 18px;
-   line-height: 1.3;
+   color: #333;
+   padding: 0 70px;
 }
 .about-gallery{
+   margin-top: 110px;
    display: flex;
    justify-content: space-between;
-
 }
 .about-gallery-item img{
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
+/* about */
 
+
+/* advantage */
+#advantages{
+   height: 600px;
+   padding: 90px auto;
+   text-align: center;
+}
 .advantages-table{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -79,4 +92,18 @@ body{
    height: 100vh;
    background-image: url(/FinalTasks/Task01/image/alternative-energy.jpg);
    background-position:center;
+   display: flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items: center;
+}
+
+.products-gallery{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.testimonials-clients{
+   display: flex;
 }

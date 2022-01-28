@@ -33,5 +33,5 @@ a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 a{color: black;}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight: inherit; font-size: inherit; font-family:font-family: "Oswald", "Times New Roman", Times, serif;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight: inherit; font-size: inherit;}
 
