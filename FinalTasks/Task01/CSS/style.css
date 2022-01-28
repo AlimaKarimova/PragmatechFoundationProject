@@ -1,0 +1,82 @@
+
+body{
+   background-color: white;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+#header{
+   width: 100%;
+   height: 650px;
+   background:url(/FinalTasks/Task01/image/slide-03.jpg) center/cover;
+}
+
+.header-navbar{
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-navbar-nav ul{
+   display: flex;
+}
+
+.header-navbar-nav ul li a{
+   color: white;
+}
+
+
+/* about */
+
+
+#about{  
+   text-align: center;
+}
+#about  .title{
+   margin: 100px auto 20px;
+   font-size: 36px;   
+}
+#about hr{
+   width: 100%;
+   height: 1px;
+   background-color: black;
+   margin: 50px auto;
+}
+
+#about p{
+   margin-bottom: 100px;
+   font-weight: 300px;
+   font-size: 18px;
+   line-height: 1.3;
+}
+.about-gallery{
+   display: flex;
+   justify-content: space-between;
+
+}
+.about-gallery-item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.advantages-table{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 30px;
+}
+.advantages-table-item{
+   display: flex;
+   justify-content: space-between;
+
+}
+.advantages-table-item img{
+   width: 50%;
+   height: 50%;
+   object-fit:contain;
+}
+
+.about-why-ecotech{
+   width: 100%;
+   height: 100vh;
+   background-image: url(/FinalTasks/Task01/image/alternative-energy.jpg);
+   background-position:center;
+}

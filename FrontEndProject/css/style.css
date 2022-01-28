@@ -112,6 +112,29 @@ body{
    color: #3d4451be;
 }
 
+/* education styles */
+.timebox-date{
+   width: 40%;
+   text-align: center;
+   padding:3px;
+   margin-bottom: 15px;
+   background-color: #07cb79;
+   color: white;
+   border-radius:5px;
+}
+.timebox-date::after{
+   content:"";
+   position: absolute;
+   left: 65px;
+   top: 48px;
+   border: 10px solid transparent;
+   border-left: 10px solid #07cb79 ;
+   z-index: 10;
+}
+.timebox-text{
+   
+}
+
 /* timeline styles */
 
 .timeline{    
@@ -129,15 +152,14 @@ body{
    margin-bottom: 30px;
 }
 .left {
-
-    position:relative;
-    top: 0;
-    left: 0;
+   position:relative;
+   top: 0;
+   left: 0;
 }
 .right {
-    position:relative;
-    top:0%;
-    right: -55%;
+   position:relative;
+   top:0%;
+   right: -55%;
 }
 .line{
    content: '';
