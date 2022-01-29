@@ -1,6 +1,6 @@
 .container{
  max-width:1200px;
- margin: 0px auto;
+ margin: 0 auto;
 }
 
 /* title styles */
@@ -52,7 +52,6 @@
    padding: 7px 25px;
    font-size: 0.875rem;
    line-height: 1.9;
-   text-align: center;
 }
 .transparent-button{
    min-width: 200px;
