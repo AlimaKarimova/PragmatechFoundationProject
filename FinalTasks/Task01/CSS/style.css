@@ -16,12 +16,28 @@ body{
 .header-navbar{
    display: flex;
    justify-content: space-between;
+   padding: 14px 0px;
 }
 .header-navbar-nav ul{
    display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   margin-left: -10px;
+}
+.header-navbar-nav ul li{
+   padding-right: 20px;
 }
 .header-navbar-nav ul li a{
    color: white;
+   line-height: 1.2;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-inner-title{
+   display: flex;
+   justify-content: center;
 }
 /* header */
 
@@ -30,7 +46,6 @@ body{
 /* about */
 #about{
    padding-top: 105px;
-   text-align: center;
 }
 #about span{
    font-size: 12px;
@@ -61,7 +76,6 @@ body{
 /* advantage */
 #advantages{
    margin: 90px auto;
-   text-align: center;
 }
 .advantages-table{
    margin: 65px 15px 60px;
@@ -101,7 +115,6 @@ body{
 
 #why-ecotech{
    width: 100%;
-   height:;
    background-image: url(/FinalTasks/Task01/image/alternative-energy.jpg);
    background-position:center;
    display: flex;
@@ -206,7 +219,6 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   text-align: center;
    background-image: url(/FinalTasks/Task01/image/border-image.png),url(/FinalTasks/Task01/image/parallax-01.jpg);
    background-position:top, center;
    background-size:auto, cover;
@@ -216,4 +228,32 @@ body{
 
 #our-coverage h2{
    margin: 27px;
+}
+
+
+/* useful-info */
+
+
+
+/* footer */
+#footer{
+   padding: 85px 0px 15px 0px;
+   background-color: #131313;
+   text-align: center;
+
+}
+.footer-logo img{
+
+   width: 198px;
+   height: 62px;
+   object-fit: contain;
+}
+.footer-social{
+   margin-top: 85px;
+}
+.footer-copyright{
+   margin-top: 20px;
+   font-size: 12px;
+   font-weight: 300;
+   color: #888;
 }

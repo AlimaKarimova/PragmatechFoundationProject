@@ -48,3 +48,39 @@
   background: #eee;
   margin: 45px 0;
 }
+
+.text-align-center{
+   text-align: center;
+}
+
+.white-small-text{
+   margin-top: 20px;
+   font-size: 12px;
+   font-weight: 300;
+   color: white;
+
+}
+
+/* FLEX STYLES */
+
+.display-flex{
+   display: flex;
+}
+.display-flex-center{
+   display: flex;
+   justify-content:center;
+}
+.display-flex-jc-sb{
+   display: flex;
+   justify-content:space-between;
+}
+
+
+h1{
+   line-height: 1.16667;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Oswald", "Times New Roman", Times, serif;
+    color: white;
+}
