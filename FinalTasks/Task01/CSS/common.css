@@ -5,66 +5,87 @@
 
 /* title styles */
 
-.title{
+.black-title-36{
    text-transform: uppercase;
-   font-size: 36px;
-   font-family: "Oswald", "Times New Roman", Times, serif;
-   line-height: 1.5;
-   font-weight: 400;
    color: #333;
+   font: 400 36px/1.5 Oswald;
 }
-.green-title{
+.green-title-36{
    text-transform: uppercase;
-   font-size: 36px;
-   font-family: "Oswald", "Times New Roman", Times, serif;
-   line-height: 1.5;
-   font-weight: 400;
+   font: 400 36px/1.5 Oswald;
    color:#5dd39e;
 }
-.white-title{
+.white-title-36{
    text-transform: uppercase;
-   font-size: 36px;
-   font-family: "Oswald", "Times New Roman", Times, serif;
-   line-height: 1.5;
-   font-weight: 400;
+   font: 400 36px/1.5 Oswald;
    color:white;
 }
-.white-big-title{
-   line-height: 1.125;
-   font-size: 48px;
-   color: white;
+.green-title-48{
    text-transform: uppercase;
+   font:400 48px/1.125 Oswald;
+   color:#5dd39e;
 }
-
-
+.white-title-48{
+   text-transform: uppercase;
+   font: 400 48px/1.125 Oswald;
+   color:white;
+}
+.green-title-60{
+   font: 400 60px/1.1667 Oswald;
+   text-transform: uppercase;
+   color:#5dd39e;
+}
+.white-title-60{
+   font:400 60px/1.1667 Oswald;
+   text-transform: uppercase;
+   color: white;
+}
 
 /* button styles */
-
-.button{
-   min-width: 200px;
-   background-color: #5dd39e;
-   border-color: #5dd39e;
-   color: #fff;
+.btn{
+   font:normal 700 14px/1.92857 Open sans;
    text-transform: uppercase;
-   font-weight: 700;
+   min-width: 200px;
    border-radius: 25px;
-   border-width: 2px;
-   padding: 7px 25px;
-   font-size: 0.875rem;
-   line-height: 1.9;
+   display: inline-block;
    text-align: center;
-}
-.transparent-button{
-   min-width: 200px;
-   background-color: transparent;
-   border-color: #5dd39e;
+   vertical-align: middle;
+   padding: 7px 25px;
+   line-height: 1.9;
    color: #fff;
-   border-width: 2px;   
-   font-weight: 700;
-   text-transform: uppercase;
-   border-radius: 25px;
+   background-color: #5dd39e;
 }
-
+.btn:hover{
+   background-color:#31b378;
+   border-color: #31b378;
+}
+.transparent-btn{
+   font:normal 700 14px/1.92857 Open sans;
+   text-transform: uppercase;
+   min-width: 200px;
+   border-radius: 25px;
+   display: inline-block;
+   text-align: center;
+   vertical-align: middle;
+   border: 2px solid #5dd39e ;
+   padding: 5px 25px;
+   line-height: 1.9;
+   color: #fff;
+   background-color:transparent;  
+}
+.transparent-btn:hover{
+   font:normal 700 14px/1.92857 Open sans;
+   text-transform: uppercase;
+   min-width: 200px;
+   border-radius: 25px;
+   display: inline-block;
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px 25px;
+   line-height: 1.9;
+   color: #fff;
+   background-color: #5dd39e;
+}
 
 
 /* flex styles */
@@ -81,50 +102,63 @@
    justify-content:space-between;
 }
 
+/* form styles */
 
-h1{
-   line-height: 1.16667;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: "Oswald", "Times New Roman", Times, serif;
-    color: white;
+.form-container{
+   width: 470px;
+   padding: 40px 35px;
+   border-radius: 6px;
+   background: #fff;
+   box-shadow: 0 0 30px 10px rgb(0 0 0 / 20%);
+   text-align: center;
+}
+h3{
+   font:400 20px/1.2 Oswald;
+   text-transform: uppercase;
+   color: #333;
+   text-align: center;
+}
+.form-fields{
+   margin-top: 30px;
+}
+.form-field{
+   margin-bottom: 10px;
+}
+input{
+   position: relative;
+   height: 40px;
+   width: 100%;
+   padding: 5px 25px;
+   background-color: #f5f5f5;
+   border: 1px solid #f2dede;
+   border-radius: 6px;
+   text-align: start;
+   font:italic 14px/28px Open sans ;
 }
 
+/* text styles */
 
-.text-white-fs18-fw300{
-   font-weight: 300;
-   line-height: 1.33333;
-   font-size: 18px;
+.text-align-center{
+   text-align: center;
+}
+.white-text-18{
+   font:300 18px/1.33333 Open sans;
    color: white;
 }
 
+.white-small-text{
+ font: 300 12px/18px Open sans;
+ margin-top: 20px;
+ color: white;
+}
+.grey-small-text{
+  font: 300 12px/18px Open sans;
+  margin-top: 20px;
+  color: #888;
+}
 .line{
    width: 100%;
    height: 1px;
    background: #eee;
    margin: 45px 0;
- }
- 
- .text-align-center{
-    text-align: center;
- }
- 
- .white-small-text{
-    margin-top: 20px;
-    font-size: 12px;
-    font-weight: 300;
-    color: white;
- 
- }
-
-
-.grey-small-text{
-   font-size: 12px;
-   line-height: 18px;
-   font-weight: 300;
-   color: #888;
-}
-.grey-medium-text{
-   
 }

@@ -1,6 +1,6 @@
 
 body{
-   margin: 0px;
+   margin: 0px auto;
    background-color: white;
    color: #333;
    font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -11,52 +11,77 @@ body{
 /* header */
 #header{
    height: 650px;
-   background:url(/FinalTasks/Task01/image/slide-03.jpg) center/cover;
+   background:url(/FinalTasks/Task01/image/slide-02.jpg) center/cover;
 }
 .header-navbar{
-   padding: 14px 0px;
+   padding: 15px 10px;
 }
 .header-navbar-nav ul{
    margin-top: 20px;
 }
-.header-navbar-nav ul li{
-   padding-right: 20px;
-}
-.header-navbar-nav ul li a{
+.nav-link{
    color: white;
-   font:700 14px/1.2 inherit ;
-   line-height: 1.2;
-   font-size: 14px;
-   font-weight: 700;
+   font:700 14px/1.2 Open sans;
    text-transform: uppercase;
+   margin-right: 50px;
+}
+.header-navbar-contact{
+   margin-top: 10px;
+}
+.header-navbar-contact i{
+   color: #5dd39e;
+   font-size: 22px;
+   line-height: 26px;
+}
+.header-navbar-contact span{
+   color: white;
+   font-weight: 700;
+   font-size: 18px;
+   margin-left: 10px;
 }
 
+
+.header-inner{
+   position: relative;
+}
+.header-inner-title{
+   position: absolute;
+   top: 110px;
+   left:10px;  
+}
+.header-inner-title p{
+   margin: 20px auto 50px;
+}
+.header-inner-form{
+   position: absolute;
+   right:0;
+   top:0;
+}
+button{
+   margin-top: 30px;
+}
 
 
 /* about */
+
 #about{
    padding-top: 105px;
 }
 
 #about p{
-   font-weight:300;
-   line-height: 1.33333;
-   font-size: 18px;
+   font: 300 18px/1.33333 Open sans;
    padding: 0 70px;
-}
-.about-gallery{
-   margin-top: 110px;
-   
+   margin-bottom: 110px;  
 }
 .about-gallery-item img{
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
-/* about */
 
 
 /* advantage */
+
 #advantages{
    margin: 90px auto;
 }
@@ -77,21 +102,14 @@ body{
    height:62px;
    object-fit:contain;
 }
-
 .advantages-table-item h4{
    text-align: left;
-   line-height: 1.33333;
-   font-size: 18px;
+   font:400 18px/1.33333 Oswald ;
    text-transform: uppercase;
-   font-family: "Oswald", "Times New Roman", Times, serif;
-   font-weight: 400;
 }
-.advantages-table-item p{
+.advantages-table-item p{  
    text-align: left;
-   margin-top: 10px; 
-   font-weight: 300;
-   line-height: 18px;
-   font-size: 12px;
+   margin-top: 10px;
 }
 
 /* why-ecotech */
@@ -107,26 +125,9 @@ body{
    justify-content: center;
    text-align: center;
 }
-#why-ecotech h2{
-   font-family: "Oswald", "Times New Roman", Times, serif;
-    font-weight: 400;
-    line-height: 1.125;
-    font-size: 48px;
-    color: white;
-
-}
-#why-ecotech span{
-   font-family: "Oswald", "Times New Roman", Times, serif;
-    font-weight: 400;
-    line-height: 1.125;
-    font-size: 48px;
-    color:#5dd39e
-}
 #why-ecotech p{
    margin-top: 35px;
    margin-bottom: 65px;
-
-
 }
 
 
@@ -136,15 +137,12 @@ body{
    margin: 90px 0px;
 }
 #products .container{
-   display: flex;
    flex-direction:column;
    align-items: center;
 }
 .products-gallery{
-   display: flex;
-   justify-content: space-between;
    gap: 30px;
-   margin: 50px 0px 60px 0px;
+   margin: 50px auto 60px;
 }
 .products-gallery-item{
    border-radius: 6px;
@@ -152,13 +150,10 @@ body{
 }
 .products-gallery-item h4{
    padding: 15px 38px;
-   line-height: 1.33333;
-   font-size: 18px;
-   font-family: "Oswald", "Times New Roman", Times, serif;
-   font-weight: 400;
+   font: 400 18px/1.33333 Oswald;
 }
 .products-gallery-item img{
-   border-radius:6px 0px ;
+   border-radius:6px;
 }
 
 /* testimonials */
@@ -166,50 +161,40 @@ body{
 #testimonials {
    display: flex;
    text-align: center;
-   margin-bottom: 80px;
+   margin-bottom: 90px;
 }
 .bold-line{
    width: 56px;
-   background: #eee; 
    height: 8px;
+   background: #eee; 
    margin: 21px auto 21px;
 }
-.testimonials-clients{
-   margin-top: 100px ;
-   display: flex;
-}
-.testimonials-clients-item{
-   display: flex;
+.clients-item{
+   margin-top: 110px;
    padding:0px 15px;
    text-align: left;
 }
-.testimonials-clients-item img{
+.clients-item img{
    width: 70px;
    height: 70px;
    border-radius: 50%;
    margin-right: 27px;
 }
-.testimonials-clients-item-text h4{
-   font-size: 14px;
-   line-height: 0.8;
-   font-style: normal;
+.clients-item-text h4{
+   font:900 14px/0.8 Open Sans;
    text-transform: uppercase;
    letter-spacing: 0.2em;
-   font-weight: 900;
    color: #252525;
-   margin-bottom: 5px;
+   margin: 5px 0px;
 
 }
-.testimonials-clients-item-text span{
-   font-size: 12px;
-   font-weight: 300;
-   font-style: italic;
+.clients-item-text span{
+   font: italic 300 12px Open Sans;
    color: #888;
 }
-.testimonials-clients-item-text p{
+.clients-item-text p{
    margin-top: 10px;
 }
-
 
 /* our-coverage */
 
@@ -219,40 +204,106 @@ body{
    justify-content: center;
    align-items: center;
    background-image: url(/FinalTasks/Task01/image/border-image.png),url(/FinalTasks/Task01/image/parallax-01.jpg);
-   background-position:50% 40%,center ;
+   background-position:50% 35%,center ;
    background-size: auto, cover;
    background-repeat: no-repeat, no-repeat;
+   margin-bottom: 65px;
 
 }  
 #our-coverage h2{
    margin-bottom: 27px;
 }
 
-
-
 /* useful-info */
+.info-carousel{
+   width: 1200px;
+   height: 380px;
+   position: relative;
+   overflow: hidden;
+   margin-top: 65px;
+   margin-bottom: 240px;
+}
+.info-gallery{
+   width: 2280px;
+   height: inherit;
+   display: flex;
+   position: absolute;
+   top: 0px;
+   transition: all .5s linear;
+
+}
+.info-gallery-item{
+   width: 570px;
+   height: inherit;
+}
+img{
+   width: inherit;
+   height: inherit;
+   object-fit: cover;
+   box-sizing: border-box;
+}
+
+/* picture with grafics */
+.info-support{
+   position: relative;
+   height: 639px;
+   background-image:url(/FinalTasks/Task01/image/diagramma.png),url(/FinalTasks/Task01/image/parallax-05.jpg);
+   background-position:5% 45%,top;
+   background-repeat: no-repeat,no-repeat;
+   background-attachment:local,fixed;
+}
+.info-support-title{
+   width: 470px;
+   position: absolute;
+   top: 50%;
+   right:5%;
+   transform: translateY(-50%);  
+}
+.info-support p{  
+   margin: 35px auto 65px;
+}
 
 
-
+/* contact */
+#contact{
+   margin-top: 135px;
+   margin-bottom: 60px;
+}
+.contact-office{
+   flex-direction: column;
+}
+.contact-form .form-container{
+   box-shadow: none;
+   box-sizing: content-box;
+}
+.contact-office-inner img{
+   border-radius: 6px;
+}
+.contact-office-address h3{
+   margin: 10px 0px 0px;
+   font: 400 18px/1.3333 Oswald;
+}
+.contact-office-address p{
+   margin-top: 8px;
+   font:400 14px/21px Open sans ;
+   color: #888;
+   text-align:left ;
+}
 
 /* footer */
 #footer{
    padding: 85px 0px 15px 0px;
    background-color: #131313;
-   text-align: center;
 }
 .footer-logo a img{
    transform: scale(1.3);
 }
 .footer-social{
    margin: 80px auto 20px;
-   display: flex;
-   justify-content: center;
 }
 .footer-social a img{
    height: 39px;
    width: auto;
    margin-right: 4px;
 }
-
 
