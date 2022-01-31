@@ -1,14 +1,148 @@
 .container {
-   max-width: 950px;
+   width: 100%;
+   max-width: 940px;
+   padding: 0px 10px;
    margin: 0 auto;
 }
 
-.header-style {
+.title {
+   color: #3d4451;
+   font: 600 34px/1.2 Open sans;
    text-align: center;
-   text-transform: uppercase;
-   margin:150px auto 50px; 
-   font-size: 2rem;
-   font-weight: 700;
-   color: rgba(0, 0, 0, 0.664);
+   margin: 0 0 25px 0;
+   vertical-align: baseline;
+   text-transform: capitalize;
 }
 
+/* my interestin icindeki */
+.p{
+   margin: 0 0 25px 0;
+   padding: 0;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timebox-date {
+   width: 40%;
+   text-align: center;
+   padding: 3px;
+   margin-bottom: 15px;
+   background-color: #07cb79;
+   color: white;
+   border-radius: 5px;
+}
+
+.timebox-date::after {
+   content: "";
+   position: absolute;
+   left: 65px;
+   top: 48px;
+   border: 10px solid transparent;
+   border-left: 10px solid #07cb79;
+   z-index: 10;
+}
+
+.timebox-text {}
+
+/* timeline styles */
+
+.timeline {
+   position: relative;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.timebox {
+   padding: 5% 8%;
+   width: 45%;
+   position: relative;
+   background-color: white;
+   border-top: 5px solid #07cb79;
+   box-shadow: 0 1px 6px rgb(0 0 0 / 12%);
+   margin-bottom: 30px;
+}
+
+.left {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+.right {
+   position: relative;
+   top: 0%;
+   right: -55%;
+}
+
+.line {
+   content: '';
+   position: absolute;
+   width: 3px;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #07cb798e;
+}
+
+/*timebox-un dekorasiyasi*/
+
+.timebox::after {
+   content: "";
+   position: absolute;
+   top: 30%;
+   width: 14px;
+   height: 14px;
+   background-color: white;
+   transform: rotate(45deg);
+}
+
+.left::after {
+   position: absolute;
+   right: -6px;
+}
+
+.right::after {
+   position: absolute;
+   left: -6px;
+}
+
+/*daireler*/
+
+.timebox::before {
+   content: "";
+   position: absolute;
+   top: 30%;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #07cb79;
+}
+
+.left::before {
+   position: absolute;
+   right: -11.11%;
+   transform: translateX(50%);
+}
+
+.right::before {
+   position: absolute;
+   left: -11.11%;
+   transform: translateX(-50%);
+}
