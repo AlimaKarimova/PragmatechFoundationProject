@@ -1,49 +1,55 @@
-.container{
- max-width:1200px;
- margin: 0px auto;
+.container {
+   max-width: 1200px;
+   margin: 0px auto;
 }
 
 /* title styles */
 
-.black-title-36{
+.black-title-36 {
    text-transform: uppercase;
    color: #333;
    font: 400 36px/1.5 Oswald;
 }
-.green-title-36{
+
+.green-title-36 {
    text-transform: uppercase;
    font: 400 36px/1.5 Oswald;
-   color:#5dd39e;
+   color: #5dd39e;
 }
-.white-title-36{
+
+.white-title-36 {
    text-transform: uppercase;
    font: 400 36px/1.5 Oswald;
-   color:white;
+   color: white;
 }
-.green-title-48{
-   text-transform: uppercase;
-   font:400 48px/1.125 Oswald;
-   color:#5dd39e;
-}
-.white-title-48{
+
+.green-title-48 {
    text-transform: uppercase;
    font: 400 48px/1.125 Oswald;
-   color:white;
+   color: #5dd39e;
 }
-.green-title-60{
+
+.white-title-48 {
+   text-transform: uppercase;
+   font: 400 48px/1.125 Oswald;
+   color: white;
+}
+
+.green-title-60 {
    font: 400 60px/1.1667 Oswald;
    text-transform: uppercase;
-   color:#5dd39e;
+   color: #5dd39e;
 }
-.white-title-60{
-   font:400 60px/1.1667 Oswald;
+
+.white-title-60 {
+   font: 400 60px/1.1667 Oswald;
    text-transform: uppercase;
    color: white;
 }
 
 /* button styles */
-.btn{
-   font:normal 700 14px/1.92857 Open sans;
+.btn {
+   font: normal 700 14px/1.92857 Open sans;
    text-transform: uppercase;
    min-width: 200px;
    border-radius: 25px;
@@ -55,26 +61,29 @@
    color: #fff;
    background-color: #5dd39e;
 }
-.btn:hover{
-   background-color:#31b378;
+
+.btn:hover {
+   background-color: #31b378;
    border-color: #31b378;
 }
-.transparent-btn{
-   font:normal 700 14px/1.92857 Open sans;
+
+.transparent-btn {
+   font: normal 700 14px/1.92857 Open sans;
    text-transform: uppercase;
    min-width: 200px;
    border-radius: 25px;
    display: inline-block;
    text-align: center;
    vertical-align: middle;
-   border: 2px solid #5dd39e ;
+   border: 2px solid #5dd39e;
    padding: 5px 25px;
    line-height: 1.9;
    color: #fff;
-   background-color:transparent;  
+   background-color: transparent;
 }
-.transparent-btn:hover{
-   font:normal 700 14px/1.92857 Open sans;
+
+.transparent-btn:hover {
+   font: normal 700 14px/1.92857 Open sans;
    text-transform: uppercase;
    min-width: 200px;
    border-radius: 25px;
@@ -90,21 +99,23 @@
 
 /* flex styles */
 
-.display-flex{
+.display-flex {
    display: flex;
 }
-.display-flex-center{
+
+.display-flex-center {
    display: flex;
-   justify-content:center;
+   justify-content: center;
 }
-.display-flex-jc-sb{
+
+.display-flex-jc-sb {
    display: flex;
-   justify-content:space-between;
+   justify-content: space-between;
 }
 
 /* form styles */
 
-.form-container{
+.form-container {
    width: 470px;
    padding: 40px 35px;
    border-radius: 6px;
@@ -112,19 +123,23 @@
    box-shadow: 0 0 30px 10px rgb(0 0 0 / 20%);
    text-align: center;
 }
-h3{
-   font:400 20px/1.2 Oswald;
+
+h3 {
+   font: 400 20px/1.2 Oswald;
    text-transform: uppercase;
    color: #333;
    text-align: center;
 }
-.form-fields{
+
+.form-fields {
    margin-top: 30px;
 }
-.form-field{
+
+.form-field {
    margin-bottom: 10px;
 }
-input{
+
+input {
    position: relative;
    height: 40px;
    width: 100%;
@@ -133,30 +148,33 @@ input{
    border: 1px solid #f2dede;
    border-radius: 6px;
    text-align: start;
-   font:italic 14px/28px Open sans ;
+   font: italic 14px/28px Open sans;
 }
 
 /* text styles */
 
-.text-align-center{
+.text-align-center {
    text-align: center;
 }
-.white-text-18{
-   font:300 18px/1.33333 Open sans;
+
+.white-text-18 {
+   font: 300 18px/1.33333 Open sans;
    color: white;
 }
 
-.white-small-text{
- font: 300 12px/18px Open sans;
- margin-top: 20px;
- color: white;
+.white-small-text {
+   font: 300 12px/18px Open sans;
+   margin-top: 20px;
+   color: white;
 }
-.grey-small-text{
-  font: 300 12px/18px Open sans;
-  margin-top: 20px;
-  color: #888;
+
+.grey-small-text {
+   font: 300 12px/18px Open sans;
+   margin-top: 20px;
+   color: #888;
 }
-.line{
+
+.line {
    width: 100%;
    height: 1px;
    background: #eee;
