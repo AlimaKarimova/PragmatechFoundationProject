@@ -26,121 +26,129 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.timebox-date {
-   width: 40%;
-   text-align: center;
-   padding: 3px;
-   margin-bottom: 15px;
-   background-color: #07cb79;
-   color: white;
-   border-radius: 5px;
+.section{
+   padding-top: 70px;
 }
 
-.timebox-date::after {
-   content: "";
-   position: absolute;
-   left: 65px;
-   top: 48px;
-   border: 10px solid transparent;
-   border-left: 10px solid #07cb79;
-   z-index: 10;
-}
 
-/* timeline styles */
 
-.timeline {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* time */
+.timeline{    
    position: relative;
-   width: 80%;
    margin: 0 auto;
-}
-
-.timebox {
-   padding: 5% 8%;
+ }
+ .timebox {
+   padding:5% 2%;
    width: 45%;
    position: relative;
-   background-color: white;
+   background-color:white;
    border-top: 5px solid #07cb79;
-   box-shadow: 0 1px 6px rgb(0 0 0 / 12%);
+   box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
    margin-bottom: 30px;
-}
+ }
+ .left {
 
-.left {
-   position: relative;
-   top: 0;
-   left: 0;
+    position:relative;
+    top: 0;
+    left: 0;
+ }
+ .right {
+    position:relative;
+    top:0%;
+    right: -55%;
+ }
+ .line{
+      content: '';
+      position: absolute;
+      width: 3px;
+      top: 95px;
+    bottom: 159px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color:#07cb798e;
+    
+ }
+ /*romb*/
+ .timebox::after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    margin-right: 2px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #fff;
 }
-
-.right {
-   position: relative;
-   top: 0%;
-   right: -55%;
+.left::after{
+    position: absolute;
+    right:-12px;
 }
-
-.line {
-   content: '';
+.right::after{
    position: absolute;
-   width: 3px;
-   top: 0;
-   bottom: 0;
-   left: 50%;
-   transform: translateX(-50%);
-   background-color: #07cb798e;
+   left: -10px;
+   transform:rotate(180deg);
 }
 
-/*timebox-un dekorasiyasi*/
-
-.timebox::after {
-   content: "";
-   position: absolute;
-   top: 30%;
-   width: 14px;
-   height: 14px;
-   background-color: white;
-   transform: rotate(45deg);
-}
-
-.left::after {
-   position: absolute;
-   right: -6px;
-}
-
-.right::after {
-   position: absolute;
-   left: -6px;
-}
-
-/*daireler*/
-
-.timebox::before {
+/*daireler*/ 
+.timebox::before{
    content: "";
    position: absolute;
    top: 30%;
    width: 10px;
    height: 10px;
    border-radius: 50%;
-   background-color: #07cb79;
+   background-color:#07cb79;
 }
-
-.left::before {
+.left::before{
    position: absolute;
    right: -11.11%;
    transform: translateX(50%);
 }
-
-.right::before {
+.right::before{
    position: absolute;
    left: -11.11%;
    transform: translateX(-50%);
 }
+
