@@ -94,7 +94,6 @@ body {
    position: relative;
    z-index: 5;
    margin-top: -340px;
-   box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 
 .about-box-profile {
@@ -117,18 +116,17 @@ body {
 .about-box-social {
    display: flex;
    justify-content: center;
-
    padding: 15px 0px;
    background-color: #07cb79;
 }
 
 .about-box-social i {
+   margin: 5px 22px;
    background-color: transparent;
    text-align: center;
    color: white;
    font-size: 20px;
    line-height: 45px;
-   margin-right: 62px;
 }
 
 .about-btn {
@@ -149,7 +147,6 @@ body {
    color: #3d4451;
    border: 1px solid #cbcdcf;
    background: transparent;
-   box-shadow: none;
    padding: 15px 20px;
    min-width: 130px;
 }
@@ -165,6 +162,7 @@ body {
 
 }
 
+/* skills styles */
 
 .skills-list {
    display: grid;
@@ -172,17 +170,15 @@ body {
    grid-template-columns: repeat(2, 1fr);
    gap: 15px;
    background-color: white;
-   box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+   color: rgb(104, 104, 104);
    font-size: 14px;
    line-height: 1.1;
-   color: rgb(104, 104, 104);
    padding: 40px 50px;
 }
 
 .skills-name {
    padding: 0px 15px;
    margin-bottom: 20px;
- 
 }
 
 .skills-name p {
@@ -198,12 +194,170 @@ body {
 
 
 
-
-.references-slides{
+/* references styles */
+.slider {
    position: relative;
-   padding: 0 105px 0 25px;
+   overflow: hidden;
    width: 100%;
    height: 250px;
    border: 1px solid red;
    background-color: white;
+
+}
+
+.slides {
+   width: 2820px;
+   px;
+   height: inherit;
+   border: 1px solid green;
+   display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.slide-box {
+   width: 940px;
+   height: inherit;
+   border: 1px solid purple;
+   padding: 55px 75px 40px 80px;
+}
+
+.slider-arrow {
+   display: inline-flex;
+   position: absolute;
+   right: 0;
+   width: 56px;
+   height: 56px;
+   border: 1px solid #d7dbde;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.slider-arrow i {
+
+   color: #3e4452;
+   font-size: 30px;
+   line-height: 58px
+}
+
+.left-arrow {
+   position: absolute;
+   right: 25px;
+   top: 25px;
+   margin-bottom: ;
+
+}
+
+.right-arrow {
+   position: absolute;
+   right: 25px;
+   top: 90px;
+}
+
+
+/* interests styles */
+.interests-box {
+   background-color: white;
+   height: 250px;
+   padding: 40px 50px;
+}
+
+.interests-box p {
+   margin: 0 0 25px 0;
+}
+
+.interests-image ul {
+   display: flex;
+   justify-content: center;
+   margin: 7px 5px;
+}
+
+.interests-image ul li {
+   margin: 7px 5px;
+   width: 74px;
+   height: 74px;
+   display: inline-block;
+   border: 1px solid #d7dbde;
+   border-radius: 3px;
+   text-align: center;
+}
+
+.interests-image ul li i {
+   color: #07cb79;
+   display: block;
+   width: 100%;
+   height: 100%;
+   font-size: 30px;
+   line-height: 74px;
+}
+
+
+/* footer styles */
+.contact-box {
+   min-height: 440px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+}
+.contact-form {
+   background-color: #fff;
+   padding: 40px 50px 10px 50px;
+}
+.contact-form h4 {
+   font-size: 24px;
+   font-weight: 400;
+   font-family: "Open Sans", sans-serif;
+   margin: 0 0 25px 0;
+   line-height: 1.1;
+}
+.form-field {
+   margin-bottom: 30px;
+}
+input {
+   width: 100%;
+   height: 34px;
+   margin-bottom: 30px;
+   font-size: 16px;
+   line-height: 16px;
+   padding: 10px 0;
+   display: block;
+   border: none;
+   border-bottom: 1px solid #d8d8d8;
+   border-radius: 0;
+   text-transform: uppercase;
+}
+input::placeholder {
+   color: #333;
+}
+input[type=button] {
+   width: 130px;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   vertical-align: middle;
+   padding: 15px 20px;
+   border-radius: 3px;
+   background-color: #07cb79;
+   color: white;
+   transition: all 0.3s ease-out;
+   box-shadow: 0 0px 5px rgb(0 0 0 / 20%), 0 2px 5px rgb(0 0 0 / 17%);
+}
+
+.contact-address{
+   background-color: white;
+}
+.address-list{
+   padding: 45px 35px 30px;
+}
+.address-list ul{
+   display: flex;
+   gap: 25px;
+}
+.address-map iframe{
+   height:max-content;
+   width: auto;
 }
