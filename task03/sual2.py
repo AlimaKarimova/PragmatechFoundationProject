@@ -1,5 +1,5 @@
 
-# from countries import *
+from countries import olkeler
 
 # # 1. butun seherlerin sayini ekranda gostersin ...yazildi
 # def CountAllCities():
@@ -8,10 +8,30 @@
 # CountAllCities()   
 
 
-#2.en cox sehere sahib olan olkeni gostersin ...sehvdi
+# 2. Listin en boyuk elementini max funksiyasini istifade etmededen tapan alqoritm yazin.
+# list=[12,26,75,89,45]
+# list.sort()
+# print(list[-1])
+
+# list = [110, 773, 322, 63, 1, 34, 5, 10]
+# maximum =list [0]
+# for i in list:
+#    if i > maximum:
+#     maximum = i
+
+#2.en cox sehere sahib olan olkeni gostersin 
 # def CityCountMax():
-   
+#    max=0
+#    for x,y in olkeler.items():
+#       if len(x)>max:
+#          maxolke=max
+#          max=len(x)
+#          maxolke=x
+#    print(maxolke)      
+
+ 
 # CityCountMax()
+
 
 
 # 3. olke adi daxil edildiyi zaman o olkeye aid olan seherlerin adlarini ekranda gostersin ...yazildi
